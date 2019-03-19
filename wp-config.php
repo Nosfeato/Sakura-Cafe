@@ -39,14 +39,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'ceX@Gd]x|_!e0VweoGNg%`rv3gtr[h}5%Nn-0)?zXHGg_+k>:dyx)_#RpuLZU-`m');
-define('SECURE_AUTH_KEY',  'aBdtiDnjUSU+ANAzaG-kON3blwnO9%kdiCV+Rr->}0@r5k rAxD;P453[i.pAR$u');
-define('LOGGED_IN_KEY',    'KKPhUru<CmvR=R:),|1S(fV!]+|nQMIp:Fo6Ql-wTpd@k@]X=Kb`j4L86L!]u_3U');
-define('NONCE_KEY',        'c Ak1:R23?hKO&u`(|m/Tq/v$A5]wEK$Vr?y3uh;?{gr^%^1chMk|v.iY&mN:GD!');
-define('AUTH_SALT',        'pSOM|QR66qtrT=7 ;< L}t8)Wc-9L/RNtj8w}J2 _r5U}ZY<~[m-4g{MxW]aN;p}');
-define('SECURE_AUTH_SALT', 'Yd`UH5L!9VtK]b+]eKWKCpuq4jH$FGqk_dTH_lx_L_u{Z*<2]N@_-E[2HPrpv^-o');
-define('LOGGED_IN_SALT',   '6f.qh7icDVZ$bsA3-<.`cH1hb 2F7mbA;goJu0.b2TIMQj~/R+{oN1] {Z<W(]0<');
-define('NONCE_SALT',       '#bj+pULkV`pnn>v&|.Z~TEHw;c0|k.+~5)5ik~n:?2EI/1u+Fh|y`4A@ar(1h6w7');
+define('AUTH_KEY',         'oQo2~+{F@onyc!>83t3*Q&^tN*XX`Mz]q+]-yq`kiuZ1rfKez|}{CH#D&M,)Lgy-');
+define('SECURE_AUTH_KEY',  '6!X$Si-pv+e=X# ^-Vl/Gm+IMV&948bcN7$0Uv!DeNnU3guHre-?f3>$+j(XtJC-');
+define('LOGGED_IN_KEY',    '7sW7wv^p|x<747JZ48<YsH@b?{<C$:+|1R&I./78IbW<T*_Nz|~Gk!];^ay>_2DG');
+define('NONCE_KEY',        '?b%{+uIw:nK8KcV|$8XkR|,ob`~q) W]H_koJ0|B0g Dm+KKY~W]Yn1Hh)xZL,o#');
+define('AUTH_SALT',        ' g13xLm@8xsa*=tFv m2)JkBn^T1sZAl44>mCn8AM[4Oh|H# Y9qypTDN9a!rGY~');
+define('SECURE_AUTH_SALT', '*aLw14[XfNay)JQN>w}R(TOa ny.b0+E6qlS9k]KNpN.8:lJ?&j1UXdR@m6;Fn^<');
+define('LOGGED_IN_SALT',   'PlW<amSJvrlt(DRy_&C-UP)f6{Nk$`kBS?!!q.rJVc%D;s2j`uQk[`3f8>4G{)^6');
+define('NONCE_SALT',       '?*}=UFOVHivyu@QQE0(L7c&!]9HgyG^81Ze-Wjwnf~*oP.QK{k{.3Oi#B@HM`3PI');
 /**#@-*/
 /**
  * WordPress Database Table prefix.
@@ -55,7 +55,7 @@ define('NONCE_SALT',       '#bj+pULkV`pnn>v&|.Z~TEHw;c0|k.+~5)5ik~n:?2EI/1u+Fh|y
  * a unique prefix. Only numbers, letters, and underscores please!
  */
 $table_prefix = 'wp_';
-define( 'WP_HOME', 'http://localhost/Apotheose/sakura-cafe' );
+define( 'WP_HOME', 'http://localhost/Oclock/sakura-cafe/' );
 define( 'WP_SITEURL', rtrim( WP_HOME, '/' ) . '/wp' );
 define( 'WP_CONTENT_DIR', __DIR__ . '/content' );
 define( 'WP_CONTENT_URL', rtrim( WP_HOME, '/' ) . '/content' );
