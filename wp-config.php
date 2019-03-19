@@ -39,14 +39,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'O:E=F+&a3bR&T`-,FMsgsAn&FY]Ij(@r(%!HV4#1~>%Bja-}Z);B4|O0GQ<BP+!F');
-define('SECURE_AUTH_KEY',  '--vnWV:ws|Y#I38&[</d+}@;}:&Zz8B;&g GB!id1~Y!E|C_3~fN k!BU-2Aedp9');
-define('LOGGED_IN_KEY',    '+uv2(-@R9)91|@|rGNw?@(K_E:nCJ0LPlhNw.0|4`TeAv8OT#+ev_Id P%=i`|pu');
-define('NONCE_KEY',        'T#JbmrJLGpk;2B^b 37[y38+D 7/D*OOdqc|e&*L=ar$k%?Jw9Hf!c1@$5H}-e-&');
-define('AUTH_SALT',        '+3o[ !p@e;om;hEnl>a+LssPbh^qPDPT+CJ YraeP-b`<pO-yO#2SYJc-~z|ue0/');
-define('SECURE_AUTH_SALT', 'SB&;Vm5!Jbc(4-N#*QL;lhw,pyG~}q~h)vc[LWE&dL4,#X1W? 6#7zo+F?aQ8wG7');
-define('LOGGED_IN_SALT',   'Q/o}LqcbcGad&NS0wHr5dr]]nuS6[v/zb?5n(-&0yRj/uPQ=^-6b,G}0(zgFL]U7');
-define('NONCE_SALT',       '64a|u*Tu7cb}a;yi_9N3Q`yQMB<W92S%5ybcLR#1UyJ=xZ_}pTF/{Za|{XAO tL`');
+define('AUTH_KEY',         'ceX@Gd]x|_!e0VweoGNg%`rv3gtr[h}5%Nn-0)?zXHGg_+k>:dyx)_#RpuLZU-`m');
+define('SECURE_AUTH_KEY',  'aBdtiDnjUSU+ANAzaG-kON3blwnO9%kdiCV+Rr->}0@r5k rAxD;P453[i.pAR$u');
+define('LOGGED_IN_KEY',    'KKPhUru<CmvR=R:),|1S(fV!]+|nQMIp:Fo6Ql-wTpd@k@]X=Kb`j4L86L!]u_3U');
+define('NONCE_KEY',        'c Ak1:R23?hKO&u`(|m/Tq/v$A5]wEK$Vr?y3uh;?{gr^%^1chMk|v.iY&mN:GD!');
+define('AUTH_SALT',        'pSOM|QR66qtrT=7 ;< L}t8)Wc-9L/RNtj8w}J2 _r5U}ZY<~[m-4g{MxW]aN;p}');
+define('SECURE_AUTH_SALT', 'Yd`UH5L!9VtK]b+]eKWKCpuq4jH$FGqk_dTH_lx_L_u{Z*<2]N@_-E[2HPrpv^-o');
+define('LOGGED_IN_SALT',   '6f.qh7icDVZ$bsA3-<.`cH1hb 2F7mbA;goJu0.b2TIMQj~/R+{oN1] {Z<W(]0<');
+define('NONCE_SALT',       '#bj+pULkV`pnn>v&|.Z~TEHw;c0|k.+~5)5ik~n:?2EI/1u+Fh|y`4A@ar(1h6w7');
 /**#@-*/
 /**
  * WordPress Database Table prefix.
@@ -55,7 +55,7 @@ define('NONCE_SALT',       '64a|u*Tu7cb}a;yi_9N3Q`yQMB<W92S%5ybcLR#1UyJ=xZ_}pTF/
  * a unique prefix. Only numbers, letters, and underscores please!
  */
 $table_prefix = 'wp_';
-define( 'WP_HOME', 'http://localhost/spe_wordpress/sakura-cafe/' );
+define( 'WP_HOME', 'http://localhost/Apotheose/sakura-cafe' );
 define( 'WP_SITEURL', rtrim( WP_HOME, '/' ) . '/wp' );
 define( 'WP_CONTENT_DIR', __DIR__ . '/content' );
 define( 'WP_CONTENT_URL', rtrim( WP_HOME, '/' ) . '/content' );
@@ -73,7 +73,7 @@ define( 'WP_CONTENT_URL', rtrim( WP_HOME, '/' ) . '/content' );
  */
 define( 'WP_DEBUG', false );
 // Environnement de production
-//define( 'ENVIRONMENT', 'production' );
+// define( 'ENVIRONMENT', 'production' );
 // Environnement de développement
 define( 'ENVIRONMENT', 'development' );
 // Environement de préproduction

@@ -6,11 +6,11 @@ RewriteRule ^(.*)$ index.php/$1
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /spe_wordpress/sakura-cafe/
+RewriteBase /Apotheose/sakura-cafe/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /spe_wordpress/sakura-cafe/index.php [L]
+RewriteRule . /Apotheose/sakura-cafe/index.php [L]
 </IfModule>
 
 # END WordPress
