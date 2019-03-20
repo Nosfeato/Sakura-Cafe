@@ -1,0 +1,30 @@
+#header {
+  display: flex;
+  margin: auto;
+  
+}
+
+h1 {
+  color: fuchsia;
+  height: 3em;
+  display:inline-block;
+
+}
+
+#connect {
+  display: flex;
+  align-content: center;
+
+}
+
+a {
+  font-size: .6em;
+  padding-left: 12px;
+  color: blue;
+}
+
+#nav {
+  justify-content:center;
+}
+
+

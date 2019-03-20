@@ -1,5 +1,5 @@
 export default [
-  'boutique',
-  'News',
-  'Blog',
+  'Home',
+  'Products',
+  'Map',
 ];

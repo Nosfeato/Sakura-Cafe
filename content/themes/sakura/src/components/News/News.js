@@ -7,23 +7,24 @@ import PropTypes from 'prop-types';
 /**
  * Local import
  */
+import './news.scss';
 
 /**
  * Code
  */
-const News = ({ title, info, image }) => (
+const News = () => (
   <div className="news">
-    <h2 className="news-title">{title}</h2>
-    <p className="ingredient-name">{info}</p>
-    <img className="image-news" alt="flash-info" src={image} />
+    <h3 className="news-title">News</h3>
+    <p className="info-name">Faites chauffer les bouilloires, voici l'info du soir !!!</p>
+    <img className="image-news" alt="flash-info" src="https://i.goopics.net/5JdY7.png" />
   </div>
 );
 
-News.propTypes = {
+/* News.propTypes = {
   title: PropTypes.string.isRequired,
   info: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-};
+}; */
 
 /**
  * Export

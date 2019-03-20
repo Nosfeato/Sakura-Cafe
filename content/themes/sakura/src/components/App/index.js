@@ -9,15 +9,22 @@ import React from 'react';
 import './app.scss';
 // import Article from 'src/components/Article/Article';
 // import News from 'src/components/News/News';
-import Nav from 'src/components/Nav/Nav';
-
+import Header from 'src/components/Header/Header';
+import News from 'src/components/News/News';
 
 /**
  * Code
  */
 const App = () => (
   <div id="app">
-    <Nav />
+    <div id="header">
+      <Header />
+    </div>
+    <div id="nav">
+    </div>
+    <div id="news">
+      <News />
+    </div>
   </div>
 );
 
