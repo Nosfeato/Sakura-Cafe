@@ -1,19 +1,18 @@
 #header {
   display: flex;
-  margin: auto;
-  
+  justify-content: space-between;
+  margin-bottom: 15%;   
 }
 
-h1 {
-  color: fuchsia;
-  height: 3em;
-  display:inline-block;
 
+
+#logo {
+background-image: url(../../img/logothib2.png);
+background-size: cover;
 }
+
 
 #connect {
-  display: flex;
-  align-content: center;
 
 }
 
@@ -24,7 +23,5 @@ a {
 }
 
 #nav {
-  justify-content:center;
+
 }
-
-

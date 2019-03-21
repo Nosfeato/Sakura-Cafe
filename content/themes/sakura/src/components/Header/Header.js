@@ -14,14 +14,9 @@ import './header.scss';
  */
 
 const Header = () => (
-  <header>
-    <div id="title">
-      <h1>Sakura Tea House</h1>
-      <div id="connect">
-        <input type="text" placeholder="Identifiant" />
-        <input type="text" placeholder="Mot de passe" />
-        <button type="submit"> Connexion </button>
-      </div>
+  <>
+    <div id="logo">
+      <img src="src/img/logothib2.png" alt="logo" id="logo" />
     </div>
     <nav id="nav">
       <ul>
@@ -30,7 +25,11 @@ const Header = () => (
         <a href="#">Carte</a>
       </ul>
     </nav>
-  </header>
+    <div id="connect">
+      <button type="submit"> Sign-in </button>
+      <button type="submit"> Sign-up </button>
+    </div>
+  </>
 );
 
 /* Nav.propTypes */

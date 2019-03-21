@@ -13,11 +13,13 @@ import './news.scss';
  * Code
  */
 const News = () => (
-  <div className="news">
-    <h3 className="news-title">News</h3>
+  <>
+    <div className="news">
+      <h3 className="news-title">News</h3>
+      <img className="image-news" alt="flash-info" src="https://i.goopics.net/5JdY7.png" />
+    </div>
     <p className="info-name">Faites chauffer les bouilloires, voici l'info du soir !!!</p>
-    <img className="image-news" alt="flash-info" src="https://i.goopics.net/5JdY7.png" />
-  </div>
+  </>
 );
 
 /* News.propTypes = {
