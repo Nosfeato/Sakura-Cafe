@@ -1,16 +1,11 @@
 @import 'src/styles/vars';
 
 #app { 
-  width: 1600px;
-  height: 950px;
-  margin: 3em auto;
-  border: 5px double #ccc;
+  height: 100%;
+  width: 100%;
   font-size: 2em;
   text-align: center;
-  padding: 1em;
   font-weight: 700;
-  background-image: url(../../img/Sakura-B.png);
-  background-size: cover;
 }
 
 #nav {

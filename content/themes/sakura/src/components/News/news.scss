@@ -1,27 +1,39 @@
 
 #news {
   align-items: center;
-  margin: auto;
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f99ff8+0,e55dea+100&0.51+16,0.75+76,0.74+76 */
-background: -moz-linear-gradient(45deg, rgba(249,159,248,0.51) 0%, rgba(246,148,246,0.51) 16%, rgba(234,109,237,0.74) 76%, rgba(229,93,234,0.74) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(45deg, rgba(249,159,248,0.51) 0%,rgba(246,148,246,0.51) 16%,rgba(234,109,237,0.74) 76%,rgba(229,93,234,0.74) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(45deg, rgba(249,159,248,0.51) 0%,rgba(246,148,246,0.51) 16%,rgba(234,109,237,0.74) 76%,rgba(229,93,234,0.74) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82f99ff8', endColorstr='#bde55dea',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  margin: 5% auto;
+  background-color: rgba(#FE00B5, 0.1);
+  height: 40%;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3%;
   
-  /*  #FFC0A6; */
-display: flex;
-flex-wrap: nowrap
+}
+
+.news {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
 }
 
 h3 {
   font-size: .8em;
+  width: 50%;
 }
 
 img {
-  width: 20%;
+  width: 50%;
+  
 }
 
 p {
-  font-size: .5em;
+  display: flex;  
+  justify-content: center;
+  box-align: center;
+  font-size: .7em;
+  margin-top: 5%
 }
 

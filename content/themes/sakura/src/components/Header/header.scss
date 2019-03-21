@@ -1,27 +1,65 @@
-#header {
+#head {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15%;   
+}
+
+#toggle {
+  width: 125px;
+  height: 20px;
+  background-color: rgba(#FE00B5, 0.1);
 }
 
 
 
 #logo {
-background-image: url(../../img/logothib2.png);
-background-size: cover;
+  height: 150px;
+  width: 200px;
 }
 
 
-#connect {
+#connect button {
+  background-color: rgba(#FE00B5, 0.1);
+  margin-right: 10px;
 
 }
 
-a {
-  font-size: .6em;
-  padding-left: 12px;
-  color: blue;
+#nav-links-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+
 }
+
+.nav-link {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  padding: 1em;
+  margin: 0 60px;
+  text-align: center;
+  font-size: 1em;
+  color: #000;
+  border: 1px black solid;
+  border-radius: 50%;
+  background-color: rgba(#FE00B5, 0.1);
+
+}
+
 
 #nav {
-
+  display: flex;
+  flex-direction : row;
+  justify-content: center;
+  margin-top: 3%;
+  
 }
+
+/* li {
+
+} */
+
+/* #nav {
+  justify-content: space-around;
+  display: flex;
+  margin-bottom: 4%;
+} */
