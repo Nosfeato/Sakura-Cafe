@@ -7,14 +7,15 @@ import './products.scss';
 
 const Products = () => (
   <>
-    <sidebar>
-      <ul>
+    <sidebar id="sidebar">
+      <ul id="list">
         <li>category</li>
         <li>category</li>
         <li>category</li>
         <li>category</li>
       </ul>
     </sidebar>
+    <input id="search" type="text" placeholder="Search" />
     <div id="productlist">
       <Product />
     </div>
