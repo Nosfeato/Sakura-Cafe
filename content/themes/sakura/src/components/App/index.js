@@ -8,14 +8,13 @@ import { Route, Switch } from 'react-router-dom';
  * Local import
  */
 import './app.scss';
-// import Article from 'src/components/Article/Article';
-// import News from 'src/components/News/News';
 import Header from 'src/components/Header';
 import News from 'src/components/News';
 import Footer from 'src/components/Footer';
-// import Products from 'src/components/Products';
-// import Map from 'src/components/Map';
-// import Product from 'src/components/Products/Product';
+import Products from 'src/components/Products';
+import Map from 'src/components/Map';
+import SignIn from 'src/components/SignIn';
+import SignUp from 'src/components/SignUp';
 
 
 /**
@@ -30,7 +29,17 @@ const App = () => (
         {/* News */}
         <Route exact path="/" component={News} />
 
+        {/* Products */}
+        <Route exact path="/products" component={Products} />
 
+        {/* Map */}
+        <Route exact path="/map" component={Map} />
+
+        {/* Sign-in */}
+        <Route exact path="/sign-in" component={SignIn} />
+
+        {/* Register */}
+        <Route exact path="/sign-up" component={SignUp} />
 
       </Switch>
     </main>

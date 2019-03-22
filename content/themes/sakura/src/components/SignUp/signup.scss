@@ -1,0 +1,38 @@
+#sign__up {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 30vw;
+    margin-top: 40px;
+}
+
+.signup__label,
+#register__button {
+    margin: 50px 0 20px 0;
+}
+
+.signup__label {
+    display: block;
+    width: 350px;
+    text-align: left;
+    line-height: 1em;
+}
+
+.signup__input {
+    
+    display: block;
+    line-height: 18px;
+    padding: 5px;
+    width: 350px;
+    background-color: rgba($color: #ffffff, $alpha: 0.5)
+
+}
+
+#register__button {
+    display: block;
+    line-height: 18px;
+    font-weight: bold;
+    width: 80px;
+}

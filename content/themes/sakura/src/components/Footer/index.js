@@ -15,9 +15,9 @@ import './footer.scss';
 
 const Footer = () => (
   <footer id="footer">
-    <ul id="menu">
-      <li>Legal Mentions</li>
-      <li>Producer</li>
+    <ul id="extras__list">
+      <li className="extras__link">Legal Mentions</li>
+      <li className="extras__link">Producer</li>
     </ul>
   </footer>
 );

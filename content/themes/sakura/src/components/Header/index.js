@@ -4,6 +4,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Nav from './Nav';
+
 /**
  * Local import
  */
@@ -19,17 +21,11 @@ const Header = () => (
       <button id="toggle" type="button">Animation</button>
       <img src="src/img/logothib2.png" id="logo" alt="sakura-logo" />
       <div id="connect">
-        <button type="submit"> Sign-in </button>
-        <button type="submit"> Sign-up </button>
+        <button type="button"><a href="/sign-in"> Sign-in </a></button>
+        <button type="button"><a href="/sign-up"> Sign-up </a></button>
       </div>
     </div>
-    <nav id="nav">
-      <ul id="nav-links-list">
-        <li className="nav-link"><a href="#">Home</a></li>
-        <li className="nav-link"><a href="#">Teas</a></li>
-        <li className="nav-link"><a href="#">Map</a></li>
-      </ul>
-    </nav>
+    <Nav />
   </header>
 );
 

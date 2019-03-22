@@ -1,12 +1,17 @@
 #head {
   display: flex;
   justify-content: space-between;
+  
+}
+
+img {
+  background-image: url(../../img/petales.png)
 }
 
 #toggle {
   width: 125px;
   height: 20px;
-  background-color: rgba(#FE00B5, 0.1);
+  background-color: rgba(rgba(224, 0, 254, 0.281), 0.5);
 }
 
 
@@ -27,21 +32,23 @@
   display: flex;
   width: 100%;
   justify-content: space-around;
-
+  margin-top: 150px;
 }
 
 .nav-link {
   display: inline-block;
-  width: 200px;
-  height: 100px;
+  width: 250px;
+  height: 130px;
   padding: 1em;
   margin: 0 60px;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.5em;
   color: #000;
-  border: 1px black solid;
-  border-radius: 50%;
-  background-color: rgba(#FE00B5, 0.1);
+ /*  border: 1px black solid;
+  border-radius: 50%; */
+ /* background-color: rgba(rgb(255, 141, 255), 0.5); */
+ background-image: url(../../img/petalesBoutons.png);
+ background-size: contain;
 
 }
 
@@ -50,7 +57,7 @@
   display: flex;
   flex-direction : row;
   justify-content: center;
-  margin-top: 3%;
+  margin-top: 5%;
   
 }
 
