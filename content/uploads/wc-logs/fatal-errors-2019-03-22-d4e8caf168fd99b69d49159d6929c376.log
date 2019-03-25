@@ -1,0 +1,20 @@
+2019-03-22T13:35:14+00:00 CRITICAL syntax error, unexpected '}' dans /var/www/html/projet/sakura-cafe/content/themes/sakura/archive.php à la ligne 33
+
+2019-03-22T13:35:16+00:00 CRITICAL syntax error, unexpected '}' dans /var/www/html/projet/sakura-cafe/content/themes/sakura/archive.php à la ligne 33
+
+2019-03-22T13:36:12+00:00 CRITICAL syntax error, unexpected ';' dans /var/www/html/projet/sakura-cafe/content/themes/sakura/archive.php à la ligne 38
+
+2019-03-22T13:36:36+00:00 CRITICAL syntax error, unexpected ';' dans /var/www/html/projet/sakura-cafe/content/themes/sakura/archive.php à la ligne 38
+
+2019-03-22T13:42:50+00:00 CRITICAL Cannot redeclare get_current_user_id() (previously declared in /var/www/html/projet/sakura-cafe/wp/wp-includes/user.php:450) dans /var/www/html/projet/sakura-cafe/content/themes/sakura/archive.php à la ligne 28
+
+2019-03-22T15:00:15+00:00 CRITICAL Object of class WP_Query could not be converted to string dans /var/www/html/projet/sakura-cafe/content/themes/sakura/archive.php à la ligne 56
+
+2019-03-22T15:01:25+00:00 CRITICAL Uncaught Error: Call to undefined function vardump() in /var/www/html/projet/sakura-cafe/content/themes/sakura/archive.php:56
+Stack trace:
+#0 /var/www/html/projet/sakura-cafe/wp/wp-includes/template-loader.php(77): include()
+#1 /var/www/html/projet/sakura-cafe/wp/wp-blog-header.php(19): require_once('/var/www/html/p...')
+#2 /var/www/html/projet/sakura-cafe/index.php(3): require('/var/www/html/p...')
+#3 {main}
+  thrown dans /var/www/html/projet/sakura-cafe/content/themes/sakura/archive.php à la ligne 56
+
