@@ -3,21 +3,25 @@ import PropTypes from 'prop-types';
 
 import Product from './Product';
 import './products.scss';
+import SearchBar from '../SearchBar';
 
 
 const Products = () => (
   <>
-    <sidebar>
-      <ul>
+    <div id="search">
+      <SearchBar />
+    </div>
+    <sidebar id="sidebar">
+      <ul id="list">
         <li>category</li>
         <li>category</li>
         <li>category</li>
         <li>category</li>
       </ul>
     </sidebar>
-    <div id="productlist">
+    <ul id="productlist">
       <Product />
-    </div>
+    </ul>
   </>
 );
 
