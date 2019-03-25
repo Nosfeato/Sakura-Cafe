@@ -1,0 +1,1 @@
+/var/www/html/spe_wordpress/sakura-cafe/content/plugins/query-monitor/wp-content/db.php
