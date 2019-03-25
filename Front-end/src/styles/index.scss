@@ -1,0 +1,16 @@
+@import 'reset';
+@import 'src/styles/vars';
+@font-face {
+  font-family: "Japan", ;
+  src: url(../polices/Japan.ttf);
+} 
+
+body {
+  font-family: 'Kalam', cursive;
+  background-image: url(../img/Sakura-B.png);
+  background-size: cover;
+}
+
+
+
+
