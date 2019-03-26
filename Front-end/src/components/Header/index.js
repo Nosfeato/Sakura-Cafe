@@ -23,6 +23,7 @@ const Header = () => (
       <div id="connect">
         <button id="sign__in__button"type="button"><a href="/sign-in"> Sign-in </a></button>
         <button id="sign__up__button" type="button"><a href="/sign-up"> Sign-up </a></button>
+        <button id="sign__up__button" type="button"><a href="#"><i class="fa fa-shopping-cart"></i></a></button>
       </div>
     </div>
     <Nav />

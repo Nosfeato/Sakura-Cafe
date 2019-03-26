@@ -18,8 +18,8 @@
 
 
 #logo {
-  height: 100px;
-  width: 150px;
+  height: 200px;
+  width: 300px;
  
 }
 
@@ -52,12 +52,14 @@
   display: flex;
   justify-content: space-around;
   height: 25px;
-  margin: 30px 0;
+  margin: 3% 0 10%;
+
 }
 
 .nav-link {
   display: flex;
   width: 20%;
+  max-width: 200px;
   height: 80px;
   justify-content: space-around;
   text-align: center;

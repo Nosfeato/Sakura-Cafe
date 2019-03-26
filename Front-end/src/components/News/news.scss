@@ -1,16 +1,17 @@
 
 .news {
   display: flex;
-  margin: 10% auto;
+  margin: auto;
   background-color: rgba(rgb(163, 150, 150), 0.5);
-  height: 35vh;
+  height: 30%;
   width: 60%;
   padding: 2em;
 }
 
 
 .news__image {
-  width: 30%;
+  width: 100px;
+  height: 200px;
 }
 
 .news__text {
