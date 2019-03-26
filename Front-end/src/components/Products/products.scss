@@ -81,13 +81,15 @@
 @media screen and (max-width: 640px){
   #nav__block__product {
     flex-direction: column;
- }
+    width: 100%;
+    align-items: center
+  }
 
- .nav-button {
-  display: inline-block;
- }
+  #list {
+    width: 100%;
+    flex-direction: row;
+    height: 50px;
 
- #sidebar {
-   display: none;
- }
+  }
 }
+
