@@ -7,19 +7,16 @@ import PropTypes from 'prop-types';
 /**
  * Local import
  */
-import './footer.scss';
+import './signout.scss';
 
 /**
  * Code
  */
 
-const Footer = () => (
-  <footer id="footer">
-    <ul id="extras__list">
-      <li className="extras__link"><a href="#">Legal Mentions</a></li>
-      <li className="extras__link"><a href="#"> Producer</a></li>
-    </ul>
-  </footer>
+const SignOut = () => (
+  <>
+    <button id="sign__out">Disconnect</button>;
+  </>
 );
 
 /* News.propTypes = {
@@ -31,4 +28,4 @@ const Footer = () => (
 /**
  * Export
  */
-export default Footer;
+export default SignOut;

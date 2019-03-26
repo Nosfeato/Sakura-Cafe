@@ -7,19 +7,16 @@ import PropTypes from 'prop-types';
 /**
  * Local import
  */
-import './footer.scss';
+import './searchbar.scss';
 
 /**
  * Code
  */
 
-const Footer = () => (
-  <footer id="footer">
-    <ul id="extras__list">
-      <li className="extras__link"><a href="#">Legal Mentions</a></li>
-      <li className="extras__link"><a href="#"> Producer</a></li>
-    </ul>
-  </footer>
+const SearchBar = () => (
+  <>
+    <input id="searchbar" type="text" placeholder="Search" />
+  </>
 );
 
 /* News.propTypes = {
@@ -31,4 +28,4 @@ const Footer = () => (
 /**
  * Export
  */
-export default Footer;
+export default SearchBar;
