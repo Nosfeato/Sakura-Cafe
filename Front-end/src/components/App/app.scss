@@ -6,8 +6,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url(../../img/Sakura-B.png);
-  background-size: cover;
 }
 
 main {
@@ -16,5 +14,6 @@ main {
   height: 60%;
   display: flex;
   flex-wrap: wrap;
+  min-width: 480px;
  
 }

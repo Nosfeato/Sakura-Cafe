@@ -17,6 +17,7 @@ export const USER_RECEIVED = 'USER_RECEIVED';
 /**
  * Reducer
  */
+
 const reducer = (state = initialState, action = {}) => {
   switch (action.type) {
 
