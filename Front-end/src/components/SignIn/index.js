@@ -13,36 +13,20 @@ import './signin.scss';
  * Code
  */
 
-class SignIn extends React.Component {
+const SignIn = () => (
 
+  <form id="sign__in">
+    <label id="username" className="signin__label" htmlFor="username">Username
+      <input className="signin__input" type="text" placeholder="Enter Username" name="username" required />
+    </label>
 
-  handleChange = (evt) => {
-    const { value, id } = evt.target;
+    <label id="password" className="signin__label" htmlFor="password">Password
+      <input className="signin__input" type="password" placeholder="Enter Password" name="password" required />
+    </label>
+    <button id="register__button" type="submit">Login</button>
+  </form>
 
-    const { changeInput } = this.props;
-
-    changeInput(value, id);
-  };
-
-  render() {
-
-    const { usernameValue, passwordValue } = this.props;
-
-    return (
-
-      <form id="sign__in">
-        <label className="signin__label" htmlFor="username">Username
-          <input id="username__input" className="signin__input" type="text" placeholder="Enter Username" name="username" value={usernameValue} onChange={this.handleChange} required />
-        </label>
-
-        <label id="password" className="signin__label" htmlFor="password">Password
-          <input id="password__input" className="signin__input" type="password" placeholder="Enter Password" name="password" value={passwordValue} onChange={this.handleChange} required />
-        </label>
-        <button id="signin__button" type="submit">Login</button>
-      </form>
-    );
-  }
-}
+);
 
 /**
  * Proptypes

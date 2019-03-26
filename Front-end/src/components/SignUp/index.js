@@ -14,10 +14,10 @@ import './signup.scss';
  */
 
 const SignUp = () => (
-
-  <form id="sign__up">
+  <form id="sign__up" method="post" action="">
     <label id="username" className="signup__label" htmlFor="username">Username</label>
     <input className="signup__input" type="text" placeholder="Enter Username" name="username" required />
+    <span id="missUsername"></span>
 
     <label id="email__adress" className="signup__label" htmlFor="email__adress">email</label>
     <input className="signup__input" type="email" placeholder="Enter Email" name="email__adress" required />
@@ -30,7 +30,6 @@ const SignUp = () => (
 
     <button id="register__button" type="submit">Register</button>
   </form>
-
 );
 
 /**
