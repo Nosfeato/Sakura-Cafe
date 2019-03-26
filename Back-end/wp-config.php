@@ -23,7 +23,7 @@ define( 'DB_NAME', 'sakura' );
 /** MySQL database username */
 define( 'DB_USER', 'sakura' );
 /** MySQL database password */
-define( 'DB_PASSWORD', 'zepjOTKPN2kMmDXy'  );
+define( 'DB_PASSWORD', 'zepjOTKPN2kMmDXy' );
 /** MySQL hostname */
 define( 'DB_HOST', '92.243.8.107' );
 /** Database Charset to use in creating database tables. */
@@ -55,7 +55,7 @@ define('NONCE_SALT',       '?*}=UFOVHivyu@QQE0(L7c&!]9HgyG^81Ze-Wjwnf~*oP.QK{k{.
  * a unique prefix. Only numbers, letters, and underscores please!
  */
 $table_prefix = 'wp_';
-define( 'WP_HOME', 'http://localhost/Apotheose/Project/sakura-cafe/Back-end/' );
+define( 'WP_HOME', 'http://localhost/Oclock/sakura-cafe/' );
 define( 'WP_SITEURL', rtrim( WP_HOME, '/' ) . '/wp' );
 define( 'WP_CONTENT_DIR', __DIR__ . '/content' );
 define( 'WP_CONTENT_URL', rtrim( WP_HOME, '/' ) . '/content' );
