@@ -6,10 +6,10 @@ import { connect } from 'react-redux';
 /**
  * Local import
  */
-import Example from 'src/components/Example';
+import SignIn from 'src/components/SignIn';
 
 // Action Creators
-import { doSomething } from 'src/store/reducer';
+import { changeInput } from 'src/store/reducer';
 
 /* === State (données) ===
  * - mapStateToProps retroune un objet de props pour le composant de présentation
@@ -18,8 +18,8 @@ import { doSomething } from 'src/store/reducer';
  *  - ownProps : les props passées au container
  * Pas de data à transmettre ? const mapStateToProps = null;
  */
-const mapStateToProps = (state, ownProps) => ({
-  message: state.message,
+const mapStateToProps = state => ({
+  value: state.value,
 });
 
 /* === Actions ===
@@ -29,17 +29,17 @@ const mapStateToProps = (state, ownProps) => ({
  *  - ownProps : les props passées au container
  * Pas de disptach à transmettre ? const mapDispatchToProps = {};
  */
-const mapDispatchToProps = (dispatch, ownProps) => ({
-  doSomething: () => {
-    dispatch(doSomething('Coucou'));
+const mapDispatchToProps = dispatch => ({
+  changeInput: (value, id) => {
+    dispatch(changeInput(value, id));
   },
 });
 
 // Container
-const ExampleContainer = connect(
+const SignInContainer = connect(
   mapStateToProps,
   mapDispatchToProps,
-)(Example);
+)(SignIn);
 
 /* 2 temps
 const createContainer = connect(mapStateToProps, mapDispatchToProps);
@@ -49,4 +49,4 @@ const ExampleContainer = createContainer(Example);
 /**
  * Export
  */
-export default ExampleContainer;
+export default SignInContainer;

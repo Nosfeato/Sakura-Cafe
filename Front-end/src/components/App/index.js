@@ -13,7 +13,7 @@ import News from 'src/components/News';
 import Footer from 'src/components/Footer';
 import Products from 'src/components/Products';
 import Map from 'src/components/Map';
-import SignIn from 'src/components/SignIn';
+import SignIn from 'src/containers/SignIn';
 import SignUp from 'src/components/SignUp';
 
 
