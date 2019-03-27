@@ -20,6 +20,7 @@ export const CONNECT_USER = 'CONNECT_USER';
 /**
  * Reducer
  */
+
 const reducer = (state = initialState, action = {}) => {
   switch (action.type) {
 

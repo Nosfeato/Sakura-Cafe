@@ -168,7 +168,7 @@ function register_qm_output_html_theme( array $output, QM_Collectors $collectors
 	if ( is_admin() ) {
 		return $output;
 	}
-	$collector = QM_Collectors::get( 'response' );
+	$collector = $collectors::get( 'response' );
 	if ( $collector ) {
 		$output['response'] = new QM_Output_Html_Theme( $collector );
 	}

@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 /**
  * Local import
  */
-import SignIn from 'src/components/SignIn';
+import SignUp from 'src/components/SignUp';
 
 // Action Creators
 import { changeInput } from 'src/store/reducer';
@@ -36,10 +36,10 @@ const mapDispatchToProps = dispatch => ({
 });
 
 // Container
-const SignInContainer = connect(
+const SignUpContainer = connect(
   mapStateToProps,
   mapDispatchToProps,
-)(SignIn);
+)(SignUp);
 
 /* 2 temps
 const createContainer = connect(mapStateToProps, mapDispatchToProps);
@@ -49,4 +49,4 @@ const ExampleContainer = createContainer(Example);
 /**
  * Export
  */
-export default SignInContainer;
+export default SignUpContainer;

@@ -41,9 +41,8 @@ abstract class QM_Collector_Assets extends QM_Collector {
 			return;
 		}
 
-		$this->data['is_ssl']          = is_ssl();
-		$this->data['host']            = wp_unslash( $_SERVER['HTTP_HOST'] );
-		$this->data['default_version'] = get_bloginfo( 'version' );
+		$this->data['is_ssl'] = is_ssl();
+		$this->data['host']   = wp_unslash( $_SERVER['HTTP_HOST'] );
 
 		$home_url  = home_url();
 		$positions = array(
@@ -112,7 +111,7 @@ abstract class QM_Collector_Assets extends QM_Collector {
 				$dependents       = $this->get_dependents( $dependency, $raw );
 				$all_dependents   = array_merge( $all_dependents, $dependents );
 
-				list( $host, $source, $local ) = $this->get_dependency_data( $dependency );
+				list( $host, $source, $local ) = $this->get_dependency_data( $dependency, $raw );
 
 				if ( empty( $dependency->ver ) ) {
 					$ver = '';
@@ -194,19 +193,13 @@ abstract class QM_Collector_Assets extends QM_Collector {
 		return $dependents;
 	}
 
-	public function get_dependency_data( _WP_Dependency $dependency ) {
+	public function get_dependency_data( _WP_Dependency $dependency, WP_Dependencies $dependencies ) {
 		$data   = $this->get_data();
 		$loader = rtrim( $this->get_dependency_type(), 's' );
 		$src    = $dependency->src;
 
-		if ( null === $dependency->ver ) {
-			$ver = '';
-		} else {
-			$ver = $dependency->ver ? $dependency->ver : $this->data['default_version'];
-		}
-
-		if ( ! empty( $src ) && ! empty( $ver ) ) {
-			$src = add_query_arg( 'ver', $ver, $src );
+		if ( ! empty( $src ) && ! empty( $dependency->ver ) ) {
+			$src = add_query_arg( 'ver', $dependency->ver, $src );
 		}
 
 		/** This filter is documented in wp-includes/class.wp-scripts.php */
