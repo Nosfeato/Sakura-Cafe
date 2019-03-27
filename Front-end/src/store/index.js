@@ -7,6 +7,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
  * Local import
  */
 import reducer from 'src/store/reducer';
+
 import ajaxMiddleware from './middlewares/ajax';
 
 /**

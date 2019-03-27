@@ -5,6 +5,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
+import Cart from 'src/components/Cart';
 import Nav from './Nav';
 
 /**
@@ -28,13 +30,12 @@ const Header = () => (
         <p id="animation__text">Animation</p>
       </div> { /* End of onoffswitch */ }
       <img src="src/img/logothib2.png" id="logo" alt="sakura-logo" />
-
       <div id="session__info">
         <button id="sign__in__button" type="button"><a href="/sign-in"> Sign-in </a></button>
         <button id="sign__up__button" type="button"><a href="/sign-up"> Sign-up </a></button>
-        <button id="sign__up__button" type="button"><a href="#"><i className="fa fa-shopping-cart" /></a></button>
-      </div> { /* End of session__info */ }
-    </div> { /* End of #head */ }
+        <button id="sign__up__button" type="button"><a href="#"><i className="fa fa-shopping-cart"></i></a></button>
+      </div>
+    </div>
     <Nav />
   </header>
 );

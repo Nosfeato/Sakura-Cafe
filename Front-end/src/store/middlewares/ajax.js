@@ -1,31 +1,27 @@
 import axios from 'axios';
 
 
-import { productsReceived, LOADING } from 'src/store/reducer';
+import { CONNECTING_USER, connectUser } from 'src/store/reducer';
 
 
-const ajaxProducts = store => next => (action) => {
+const ajaxUser = store => next => (action) => {
 
   switch (action.type) {
 
-    case LOADING: {
-      console.log('LOADING PRODUCTS');
-
+    case CONNECTING_USER: {
       const state = store.getState();
 
-      axios.post('http://localhost:3000/words', { products: state.products })
+      axios.post('http://localhost/wp-json/wp/v2/connect', { username: state.signin__username__input, password: state.signin__password__input })
         .then((response) => {
-          console.log('succès');
+          console.log('User found in database');
 
-          store.dispatch(productsReceived(response.data));
+          store.dispatch(connectUser(response.data));
         })
         .catch(() => {
-          console.error('echec');
+          console.error('Could not find user in database');
         });
-
       break;
     }
-
     default:
       break;
   }
@@ -34,4 +30,11 @@ const ajaxProducts = store => next => (action) => {
   next(action);
 };
 
-export default ajaxProducts;
+export default ajaxUser;
+
+/*
+config: {
+  headers: {
+    'Access-Control-Allow-Origin': '*',
+  }
+} */
