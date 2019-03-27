@@ -36,7 +36,7 @@ const Header = () => (
         </label>
         <p id="animation__text">Animation</p>
       </div> { /* End of onoffswitch */ }
-      <img src="src/img/logothib2.png" id="logo" alt="sakura-logo" />
+      <Link to="/"><img src="src/img/logothib2.png" id="logo" alt="sakura-logo" /></Link>
       <div id="session__info">
         <SignInLink />
         <SignUpLink />
