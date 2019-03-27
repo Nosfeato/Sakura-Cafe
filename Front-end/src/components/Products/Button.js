@@ -16,7 +16,7 @@ class Button extends React.Component {
   handleClick () {
     const categoryList = document.getElementById('list');
     categoryList.style.display = 'block';
-  }
+}
 
   render() {
     return (

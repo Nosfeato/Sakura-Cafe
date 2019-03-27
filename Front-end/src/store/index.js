@@ -25,6 +25,8 @@ const store = createStore(
   reducer,
   enhancers,
 );
+
+
 /* eslint-enable */
 
 /**

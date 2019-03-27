@@ -1,6 +1,17 @@
+/**
+ * NPM import
+ */
 import React from 'react';
 import PropTypes from 'prop-types';
 
+/**
+ * Local import
+ */
+import './map.scss';
+
+/**
+ * Code
+ */
 
 const Map = () => (
   <div id="map">
