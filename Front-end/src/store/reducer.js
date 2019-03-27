@@ -14,6 +14,9 @@ export const LOADING = 'LOADING';
 export const PRODUCTS_RECEIVED = 'PRODUCTS_RECEIVED';
 export const USER_RECEIVED = 'USER_RECEIVED';
 
+export const CONNECTING_USER = 'CONNECTING_USER';
+export const CONNECT_USER = 'CONNECT_USER';
+
 /**
  * Reducer
  */
@@ -26,15 +29,15 @@ const reducer = (state = initialState, action = {}) => {
         [action.id]: action.value,
       };
 
-    case LOADING:
+    case CONNECTING_USER:
       return {
-        ...state,
-        status: 'loading',
+        user_loading: true,
       };
 
-    case USER_RECEIVED:
+    case CONNECT_USER:
       return {
         ...state,
+        connected: true,
         username: action.username,
         status: action.status,
       };
@@ -47,25 +50,35 @@ const reducer = (state = initialState, action = {}) => {
 /**
  * Action Creators
  */
+
+
+// Input actions
+
 export const changeInput = (value, id) => ({
   type: CHANGE_INPUT,
   value,
   id,
 });
 
-export const toLoading = () => ({
-  type: LOADING,
+
+// User actions
+
+export const connectingUser = () => ({
+  type: CONNECTING_USER,
 });
+
+export const connectUser = ({ username, status }) => ({
+  type: CONNECT_USER,
+  username,
+  status,
+});
+
+
+// Products actions
 
 export const productsReceived = products => ({
   type: PRODUCTS_RECEIVED,
   results: products,
-});
-
-export const userReceived = (username, status) => ({
-  type: USER_RECEIVED,
-  username,
-  status,
 });
 
 
