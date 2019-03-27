@@ -4,6 +4,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
+import Cart from 'src/components/Cart';
 import Nav from './Nav';
 
 /**
@@ -21,9 +23,9 @@ const Header = () => (
       <button id="toggle" type="button">Animation</button>
       <img src="src/img/logothib2.png" id="logo" alt="sakura-logo" />
       <div id="connect">
-        <button id="sign__in__button"type="button"><a href="/sign-in"> Sign-in </a></button>
+        <button id="sign__in__button" type="button"><a href="/sign-in"> Sign-in </a></button>
         <button id="sign__up__button" type="button"><a href="/sign-up"> Sign-up </a></button>
-        <button id="sign__up__button" type="button"><a href="#"><i class="fa fa-shopping-cart"></i></a></button>
+        <button id="sign__up__button" type="button"><a href="#"><i className="fa fa-shopping-cart"></i></a></button>
       </div>
     </div>
     <Nav />
