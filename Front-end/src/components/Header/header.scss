@@ -1,3 +1,5 @@
+/*** HEADER ***/
+
 #header {
   display: flex;
   flex-direction: column;
@@ -6,20 +8,6 @@
 #head {
   display: flex;
   justify-content: space-between;
-}
-
-
-#toggle {
-  background-color: rgba(#FE00B5, 0.1);
-  margin-right: 15px;
-  border-radius: 40%;
-  box-shadow: 5px 8px 6px rgba(rgb(90, 90, 90), 0.5);
-  border-style: none;
-  font-family: 'Kalam', cursive;
-  font-size: 20px;
-  font-weight: 600;
-  height: 40px;
-  
 }
 
 
@@ -47,7 +35,7 @@
   
 }
 
-/* hover effect */
+    /* hover effect */
 #session__info button:hover {
 	transform: scale(1.2);
 	-ms-transform: scale(1.2);
@@ -57,7 +45,7 @@
 }
 
 
-/*** Switch button ***/
+/** Switch button **/
 
 .onoffswitch {
   position: relative; width: 40px;
@@ -121,7 +109,7 @@
   align-items: center;
   font-size: 2em;
   color: #000;
-  margin-left: -100px; 
+  margin-left: -180px; 
   /*  border: 1px black solid;*/
   border-radius: 70%;
   background-image: url(../../img/petales.png);
