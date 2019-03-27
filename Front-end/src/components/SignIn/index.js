@@ -30,14 +30,16 @@ class SignIn extends React.Component {
   }
 
   render() {
+    const { usernameValue = '', passwordValue = ''} = this.props;
+
     return(
       <form id="sign__in" onSubmit={this.handleSubmit}>
-      <label id="username" className="signin__label" htmlFor="username">Username
+      <label id="username" value={usernameValue} onChange={this.handleChange} className="signin__label" htmlFor="username">Username
         <input id="signin__username__input" className="signin__input" type="text" placeholder="Enter Username" name="username" required />
       </label>
   
       <label id="password" className="signin__label" htmlFor="password">Password
-        <input id="signin__password__input" className="signin__input" type="password" placeholder="Enter Password" name="password" required />
+        <input id="signin__password__input" value={passwordValue} onChange={this.handleChange} className="signin__input" type="password" placeholder="Enter Password" name="password" required />
       </label>
       <button id="register__button" type="submit">Login</button>
     </form>

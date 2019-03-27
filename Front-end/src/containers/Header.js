@@ -6,10 +6,10 @@ import { connect } from 'react-redux';
 /**
  * Local import
  */
-import SignUp from 'src/components/SignUp';
+import Header from 'src/components/Header';
 
 // Action Creators
-import { changeInput, registerUser } from 'src/store/reducer';
+import 'src/store/reducer';
 
 /* === State (données) ===
  * - mapStateToProps retroune un objet de props pour le composant de présentation
@@ -19,10 +19,8 @@ import { changeInput, registerUser } from 'src/store/reducer';
  * Pas de data à transmettre ? const mapStateToProps = null;
  */
 const mapStateToProps = state => ({
-  usernameValue: state.signup__username__input,
-  emailValue: state.signup__email__input,
-  passwordValue: state.signup__password__input,
-  confirmPasswordValue: state.signup__password__confirm__input,
+  username: state.username,
+  status: state.status,
 });
 
 /* === Actions ===
@@ -33,19 +31,13 @@ const mapStateToProps = state => ({
  * Pas de disptach à transmettre ? const mapDispatchToProps = {};
  */
 const mapDispatchToProps = dispatch => ({
-  changeInput: (value, id) => {
-    dispatch(changeInput(value, id));
-  },
-  tryRegisteringUser: () => {
-    dispatch(registerUser());
-  },
 });
 
 // Container
-const SignUpContainer = connect(
+const HeaderContainer = connect(
   mapStateToProps,
   mapDispatchToProps,
-)(SignUp);
+)(Header);
 
 /* 2 temps
 const createContainer = connect(mapStateToProps, mapDispatchToProps);
@@ -55,4 +47,4 @@ const ExampleContainer = createContainer(Example);
 /**
  * Export
  */
-export default SignUpContainer;
+export default HeaderContainer;
