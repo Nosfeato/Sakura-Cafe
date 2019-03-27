@@ -14,8 +14,10 @@ import Footer from 'src/components/Footer';
 import Products from 'src/components/Products';
 import Map from 'src/components/Map';
 
+import Cart from 'src/components/Cart';
 import SignIn from 'src/containers/SignIn';
 import SignUp from 'src/containers/SignUp';
+
 
 
 /**
@@ -41,6 +43,9 @@ const App = () => (
 
         {/* Register */}
         <Route exact path="/sign-up" component={SignUp} />
+
+        {/* Cart */}
+        <Route exact path="/cart" component={Cart} />
 
       </Switch>
     </main>

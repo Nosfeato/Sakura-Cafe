@@ -19,7 +19,8 @@ import { changeInput, connectingUser } from 'src/store/reducer';
  * Pas de data à transmettre ? const mapStateToProps = null;
  */
 const mapStateToProps = state => ({
-  value: state.value,
+  usernameValue: state.signin__username__input,
+  passwordValue: state.signin__password__input,
 });
 
 /* === Actions ===

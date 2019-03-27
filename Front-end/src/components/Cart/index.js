@@ -15,7 +15,6 @@ import './cart.scss';
 
 const Cart = () => (
   <div id="cart__div">
-    <a href="#"><i className="fa fa-shopping-cart" style="font-size:24px"></i></a>
   </div>
 );
 
