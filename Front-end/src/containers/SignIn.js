@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 /**
  * Local import
  */
-import SignIn from 'src/components/SignIn';
+import SignIn from 'src/components/Header/SignIn';
 
 // Action Creators
 import { changeInput, connectingUser } from 'src/store/reducer';

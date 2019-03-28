@@ -6,11 +6,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-import Username from 'src/components/Username';
-import Status from 'src/components/Status';
-import SignInLink from 'src/components/SignInLink';
-import SignUpLink from 'src/components/SignUpLink';
-import Cart from 'src/components/Cart';
+import Username from 'src/components/Header/Username';
+import Status from 'src/components/Header/Status';
+import SignInLink from 'src/components/Header/SignInLink';
+import SignUpLink from 'src/components/Header/SignUpLink';
+import SignOutLink from 'src/components/Header/SignOutLink';
+import Cart from 'src/components/Header/Cart';
 import { Link } from 'react-router-dom';
 import Nav from './Nav';
 
@@ -27,15 +28,15 @@ class Header extends React.Component {
 
   defineModulesToLoad = (username, status) => {
     if (username !== undefined && status !== undefined) {
-      return [<SignInLink key="signin" />, <SignUpLink key="signup"/>];
+      return [<Username key="username" />, <Status key="status" />, <SignOutLink key="signout" />, <Cart key="cart" />];
     }
     else {
-    return [<Username key="username"/>, <Status key="status" />, <Cart key="cart"/>];
+      return [<SignInLink key="signin" />, <SignUpLink key="signup" />];
     }
   }
 
   render() {
-    const { username = '', status = '' } = this.props;
+    const { username = '', status = ''} = this.props;
 
     return (
       <header id="header">

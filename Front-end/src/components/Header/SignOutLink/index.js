@@ -15,7 +15,7 @@ import './signout.scss';
 
 const SignOut = () => (
   <>
-    <button id="sign__out">Disconnect</button>;
+    <button id="sign__out">Disconnect</button>
   </>
 );
 

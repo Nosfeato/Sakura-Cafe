@@ -12,12 +12,12 @@ import Header from 'src/components/Header';
 import News from 'src/components/News';
 import Products from 'src/containers/Products';
 import Map from 'src/components/Map';
-import LegalMentions from 'src/components/LegalMentions';
-import Producers from 'src/components/Producers';
+
 import Footer from 'src/components/Footer';
+import LegalMentions from 'src/components/Footer/LegalMentions';
+import Producers from 'src/components/Footer/Producers';
 
-
-import Cart from 'src/components/Cart';
+import Cart from 'src/components/Header/Cart';
 import SignIn from 'src/containers/SignIn';
 import SignUp from 'src/containers/SignUp';
 

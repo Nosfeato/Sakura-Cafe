@@ -14,9 +14,7 @@ import './salescounter.scss';
  */
 
 const SalesCounter = () => (
-  <div id="counter__div">
-    <p id="sales__number">12.456 products sold</p>
-  </div>
+  <span type="button" id="sales__number">12.456 products sold</span>
 );
 
 
