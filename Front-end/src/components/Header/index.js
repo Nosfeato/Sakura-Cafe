@@ -23,29 +23,42 @@ import './header.scss';
 /**
  * Code
  */
+class Header extends React.Component {
 
+  defineModulesToLoad = (username, status) => {
+    if (username !== undefined && status !== undefined) {
+      return [<SignInLink key="signin" />, <SignUpLink key="signup"/>];
+    }
+    else {
+    return [<Username key="username"/>, <Status key="status" />, <Cart key="cart"/>];
+    }
+  }
 
-const Header = () => (
-  <header id="header">
-    <div id="head">
-      <div className="onoffswitch">
-        <input type="checkbox" name="onoffswitch" className="onoffswitch-checkbox" id="myonoffswitch" />
-        <label id="animation__selector" className="onoffswitch-label" htmlFor="myonoffswitch">
-          <span className="onoffswitch-inner" />
-          <span className="onoffswitch-switch" />
-        </label>
-        <p id="animation__text">Animation</p>
-      </div> { /* End of onoffswitch */ }
-      <Link to="/"><img src="src/img/logothib2.png" id="logo" alt="sakura-logo" /></Link>
-      <div id="session__info">
-        <SignInLink />
-        <SignUpLink />
-        <button id="sign__up__button" type="button"><Link to="/cart"><i className="fa fa-shopping-cart"></i></Link></button>
-      </div>
-    </div>
-    <Nav />
-  </header>
-);
+  render() {
+    const { username = '', status = '' } = this.props;
+
+    return (
+      <header id="header">
+        <div id="head">
+          <div className="onoffswitch">
+            <input type="checkbox" name="onoffswitch" className="onoffswitch-checkbox" id="myonoffswitch" />
+            <label id="animation__selector" className="onoffswitch-label" htmlFor="myonoffswitch">
+              <span className="onoffswitch-inner" />
+              <span className="onoffswitch-switch" />
+            </label>
+            <p id="animation__text">Animation</p>
+          </div> { /* End of onoffswitch */ }
+          <Link to="/"><img src="src/img/logothib2.png" id="logo" alt="sakura-logo" /></Link>
+          <div id="session__info">
+            {this.defineModulesToLoad(username, status)}
+          </div>
+        </div>
+        <Nav />
+      </header>
+    );
+  }
+
+}
 
 /* Nav.propTypes */
 

@@ -6,10 +6,10 @@ import { connect } from 'react-redux';
 /**
  * Local import
  */
-import Products from 'src/components/Products';
+import Searchbar from 'src/components/Products/Searchbar';
 
 // Action Creators
-import { getProductsList, getProductsCategories } from 'src/store/reducer';
+import { changeInput } from 'src/store/reducer';
 
 /* === State (données) ===
  * - mapStateToProps retroune un objet de props pour le composant de présentation
@@ -19,8 +19,7 @@ import { getProductsList, getProductsCategories } from 'src/store/reducer';
  * Pas de data à transmettre ? const mapStateToProps = null;
  */
 const mapStateToProps = state => ({
-  productsList: state.productsList,
-  productsCategoriesList: state.categoriesList,
+  searchbarValue: state.searchbar_input__input,
 });
 
 /* === Actions ===
@@ -31,19 +30,16 @@ const mapStateToProps = state => ({
  * Pas de disptach à transmettre ? const mapDispatchToProps = {};
  */
 const mapDispatchToProps = dispatch => ({
-  getProducts: () => {
-    dispatch(getProductsList());
-  },
-  getCategories: () => {
-    dispatch(getProductsCategories());
+  changeInput: (value, id) => {
+    dispatch(changeInput(value, id));
   },
 });
 
 // Container
-const ProductsContainer = connect(
+const SearchbarContainer = connect(
   mapStateToProps,
   mapDispatchToProps,
-)(Products);
+)(Searchbar);
 
 /* 2 temps
 const createContainer = connect(mapStateToProps, mapDispatchToProps);
@@ -53,4 +49,4 @@ const ExampleContainer = createContainer(Example);
 /**
  * Export
  */
-export default ProductsContainer;
+export default SearchbarContainer;

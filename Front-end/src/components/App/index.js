@@ -10,7 +10,7 @@ import { Route, Switch } from 'react-router-dom';
 import './app.scss';
 import Header from 'src/components/Header';
 import News from 'src/components/News';
-import Products from 'src/components/Products';
+import Products from 'src/containers/Products';
 import Map from 'src/components/Map';
 import LegalMentions from 'src/components/LegalMentions';
 import Producers from 'src/components/Producers';

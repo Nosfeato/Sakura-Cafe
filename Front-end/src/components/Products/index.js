@@ -3,32 +3,60 @@ import PropTypes from 'prop-types';
 
 import Product from 'src/components/Products/Product';
 import './products.scss';
-import SearchBar from 'src/components/SearchBar';
+import SearchBar from 'src/components/Products/Searchbar';
 import Button from 'src/components/Products/Button';
-import Category from 'src/components/Category';
+import Category from 'src/components/Products/Category';
 
+class Products extends React.Component {
 
-const categoryList = ['Thé Vert', 'Thé Blanc', 'Thé Noir', 'Thé Fruité'];
+  componentDidMount = () => {
+    const { getProducts, getCategories } = this.props;
 
-const Products = () => (
-  <>
-    <Button />
-    <SearchBar />
-    <div id="nav__block__product">
-      <sidebar id="sidebar">
-        <ul id="list">
-          {categoryList.map(category => (
-            <Category name={category} />
-          ))}
-        </ul>
-      </sidebar>
+    getCategories();
+    getProducts();
+  }
 
-      <ul id="productlist">
-        <Product />
-      </ul>
-    </div>
-  </>
-);
+  render() {
+    const categoryList = [
+      {
+        name: 'Green Tea',
+        id: 'green',
+      },
+      {
+        name: 'White Tea',
+        id: 'white',
+      },
+      {
+        name: 'Black Tea',
+        id: 'black',
+      },
+      {
+        name: 'Fruity Tea',
+        id: 'fruity',
+      },
+    ];
+
+    return (
+      <>
+        <Button />
+        <SearchBar />
+        <div id="nav__block__product">
+          <aside id="sidebar">
+            <ul id="list">
+              {categoryList.map(category => (
+                <Category key={category.id} name={category.name} />
+              ))}
+            </ul>
+          </aside>
+          <ul id="productlist">
+            <Product />
+          </ul>
+        </div>
+      </>
+
+    );
+  }
+}
 
 
 export default Products;

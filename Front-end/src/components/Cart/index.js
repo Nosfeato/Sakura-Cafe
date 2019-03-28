@@ -3,6 +3,7 @@
  */
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 /**
  * Local import
@@ -14,8 +15,9 @@ import './cart.scss';
  */
 
 const Cart = () => (
-  <div id="cart__div">
-  </div>
+  <>
+    <button id="sign__up__button" type="button"><Link to="/cart"><i className="fa fa-shopping-cart"></i></Link></button>
+  </>
 );
 
 
