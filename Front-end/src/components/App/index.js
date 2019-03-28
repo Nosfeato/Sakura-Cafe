@@ -47,6 +47,12 @@ const App = () => (
         {/* Cart */}
         <Route exact path="/cart" component={Cart} />
 
+        {/* LegalMentions */}
+        <Route exact path="/cart" component={LegalMentions} />
+
+        {/* Producers */}
+        <Route exact path="/cart" component={Producers} />
+
       </Switch>
     </main>
     <Footer />
