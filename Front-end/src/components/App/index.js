@@ -10,14 +10,16 @@ import { Route, Switch } from 'react-router-dom';
 import './app.scss';
 import Header from 'src/components/Header';
 import News from 'src/components/News';
-import Footer from 'src/components/Footer';
 import Products from 'src/components/Products';
 import Map from 'src/components/Map';
+import LegalMentions from 'src/components/LegalMentions';
+import Producers from 'src/components/Producers';
+import Footer from 'src/components/Footer';
+
 
 import Cart from 'src/components/Cart';
 import SignIn from 'src/containers/SignIn';
 import SignUp from 'src/containers/SignUp';
-
 
 
 /**

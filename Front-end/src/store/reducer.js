@@ -19,7 +19,8 @@ export const CONNECTING_USER = 'CONNECTING_USER';
 export const REGISTER_USER = 'REGISTER_USER';
 export const CONNECT_USER = 'CONNECT_USER';
 
-
+export const GET_PRODUCT_CATEGORIES = 'GET_PRODUCT_CATEGORIES';
+export const CATEGORIES_RECEIVED = 'CATEGORIES_RECEIVED';
 export const GET_PRODUCTS_LIST = 'GET_PRODUCTS_LIST';
 export const PRODUCTS_RECEIVED = 'PRODUCTS_RECEIVED';
 
@@ -53,7 +54,7 @@ const reducer = (state = initialState, action = {}) => {
     case NEWS_RECEIVED:
       return {
         ...state,
-        news: [action.news],
+        newslist: [action.news],
         loading_news: false,
       };
 
@@ -85,15 +86,30 @@ const reducer = (state = initialState, action = {}) => {
     /**
      * @Product actions
      */
+
+    case GET_PRODUCT_CATEGORIES:
+      return {
+        ...state,
+        loading_products_categories: true,
+      };
+
+    case CATEGORIES_RECEIVED:
+      return {
+        ...state,
+        categoriesLIst: [action.categories],
+        loading_products_categories: false,
+      };
+
     case GET_PRODUCTS_LIST:
       return {
+        ...state,
         loading_products: true,
       };
 
     case PRODUCTS_RECEIVED:
       return {
         ...state,
-        products: [action.products],
+        productsList: [action.products],
         loading_products: false,
       };
 
@@ -149,13 +165,22 @@ export const registerUser = () => ({
 
 // Products actions
 
+export const getProductsCategories = () => ({
+  type: GET_PRODUCT_CATEGORIES,
+});
+
+export const categoriesReceived = categories => ({
+  type: categoriesReceived,
+  categories,
+});
+
 export const getProductsList = () => ({
   type: GET_PRODUCTS_LIST,
 });
 
 export const productsReceived = products => ({
   type: PRODUCTS_RECEIVED,
-  results: products,
+  products,
 });
 
 
