@@ -28,21 +28,23 @@ import './header.scss';
 const Header = () => (
   <header id="header">
     <div id="head">
-      <div className="onoffswitch">
-        <input type="checkbox" name="onoffswitch" className="onoffswitch-checkbox" id="myonoffswitch" />
-        <label id="animation__selector" className="onoffswitch-label" htmlFor="myonoffswitch">
+      <div id="switch__login">
+        <div className="onoffswitch"> { /* onoffswitch */ }
+          <input type="checkbox" name="onoffswitch" className="onoffswitch-checkbox" id="myonoffswitch" />
+          <label id="animation__selector" className="onoffswitch-label" htmlFor="myonoffswitch">
           <span className="onoffswitch-inner" />
           <span className="onoffswitch-switch" />
         </label>
         <p id="animation__text">Animation</p>
       </div> { /* End of onoffswitch */ }
+        <div id="session__info"> { /* Session info */ }
+          <SignInLink />
+          <SignUpLink />
+          <button id="sign__up__button" type="button"><Link to="/cart"><i className="fa fa-shopping-cart"></i></Link></button>
+        </div> { /* End of Session info */ }
+      </div> { /* End of switch__login */ }
       <Link to="/"><img src="src/img/logothib2.png" id="logo" alt="sakura-logo" /></Link>
-      <div id="session__info">
-        <SignInLink />
-        <SignUpLink />
-        <button id="sign__up__button" type="button"><Link to="/cart"><i className="fa fa-shopping-cart"></i></Link></button>
-      </div>
-    </div>
+    </div> { /* End of head */ }
     <Nav />
   </header>
 );
