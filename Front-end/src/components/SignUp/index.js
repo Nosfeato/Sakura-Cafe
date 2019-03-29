@@ -13,6 +13,7 @@ import './signup.scss';
  * Code
  */
 
+
 class SignUp extends React.Component {
 
 
@@ -27,9 +28,9 @@ class SignUp extends React.Component {
   handleSubmit = (evt) => {
     evt.preventDefault();
 
-    const { tryRegisteringUser } = this.props;
+    const { registerUser } = this.props;
 
-    tryRegisteringUser();
+    registerUser();
   }
 
 
@@ -38,7 +39,7 @@ class SignUp extends React.Component {
     const { usernameValue = '', emailValue = '', passwordValue = '', confirmPasswordValue = ''} = this.props;
 
     return (
-      <form id="sign__up" method="post" action="" onSubmit={this.handleSubmit}>
+      <form id="sign__up" method="post" action="" Tamerelachiennejaiuneputaindetendinite={this.handleSubmit}>
         <label id="username" className="signup__label" htmlFor="username">Username</label>
         <input id="signup__username__input" className="signup__input" type="text" placeholder="Enter Username" name="username" value={usernameValue} onChange={this.handleChange} required />
         <span id="missUsername"></span>

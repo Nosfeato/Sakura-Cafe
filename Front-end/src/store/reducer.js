@@ -16,12 +16,13 @@ export const GET_NEWS_LIST = 'GET_NEWS_LIST';
 export const NEWS_RECEIVED = 'NEWS_RECEIVED';
 
 export const CONNECTING_USER = 'CONNECTING_USER';
-export const REGISTER_USER = 'REGISTER_USER';
 export const CONNECT_USER = 'CONNECT_USER';
 
 
 export const GET_PRODUCTS_LIST = 'GET_PRODUCTS_LIST';
 export const PRODUCTS_RECEIVED = 'PRODUCTS_RECEIVED';
+
+export const REGISTER_USER = 'REGISTER_USER';
 
 
 /**
@@ -66,11 +67,6 @@ const reducer = (state = initialState, action = {}) => {
         loading_user: true,
       };
 
-    case REGISTER_USER:
-      return {
-        ...state,
-        loading_user: true,
-      };
 
     case CONNECT_USER:
       return {
@@ -81,6 +77,11 @@ const reducer = (state = initialState, action = {}) => {
         loading_user: false,
       };
 
+    case REGISTER_USER:
+      return {
+        ...state,
+        loading_user: true,
+      };
 
     /**
      * @Product actions
@@ -96,6 +97,7 @@ const reducer = (state = initialState, action = {}) => {
         products: [action.products],
         loading_products: false,
       };
+
 
       /**
        * default action
@@ -145,7 +147,6 @@ export const connectUser = ({ username, status }) => ({
 export const registerUser = () => ({
   type: REGISTER_USER,
 });
-
 
 // Products actions
 

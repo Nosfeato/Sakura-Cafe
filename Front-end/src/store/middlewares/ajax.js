@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-import { CONNECTING_USER, connectUser, REGISTER_USER, GET_PRODUCTS_LIST, productsReceived, GET_NEWS_LIST, newsReceived } from 'src/store/reducer';
+import { CONNECTING_USER, connectUser, GET_PRODUCTS_LIST, productsReceived, GET_NEWS_LIST, newsReceived, REGISTER_USER } from 'src/store/reducer';
 
 const ajaxMiddleware = store => next => (action) => {
 
@@ -36,21 +36,6 @@ const ajaxMiddleware = store => next => (action) => {
       break;
     }
 
-    case REGISTER_USER: {
-      const state = store.getState();
-
-      axios.post('http://localhost/wp-json/wp/v2/register', { username: state.signup__username__input, email: state.signup__email__input, password: state.signup__password__input })
-        .then((response) => {
-          console.log('Added user to database');
-
-          store.dispatch(connectUser(response.data));
-        })
-        .catch(() => {
-          console.error('Could not create a new user');
-        });
-      break;
-    }
-
     case GET_PRODUCTS_LIST: {
       axios.post('http://localhost/wp-json/wp/v2/posts/products')
         .then((response) => {
@@ -63,6 +48,22 @@ const ajaxMiddleware = store => next => (action) => {
         });
       break;
     }
+
+
+    case REGISTER_USER: {
+      const state = store.getState();
+
+      axios.post('http://localhost/wp-json/wp/v2/register', state.signup__username__input, state.signup__email__input, state.signup__password__input)
+        .then((response) => {
+          console.log('New user added to database');
+          store.dispatch(connectUser(response.data));
+        })
+        .catch(() => {
+          console.error('New user creation failed');
+        });
+      break;
+    }
+
 
     default:
       break;
