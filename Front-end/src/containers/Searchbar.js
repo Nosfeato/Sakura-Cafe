@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 /**
  * Local import
  */
-import Searchbar from 'src/components/Products/Searchbar';
+import Searchbar from 'src/components/Main/Products/Searchbar';
 
 // Action Creators
 import { changeInput } from 'src/store/reducer';

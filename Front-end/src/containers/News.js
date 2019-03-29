@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 /**
  * Local import
  */
-import News from 'src/components/News';
+import News from 'src/components/Main/News';
 
 // Action Creators
 import { getNews } from 'src/store/reducer';

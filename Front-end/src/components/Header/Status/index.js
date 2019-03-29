@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const status = 'status';
-const Status = () => (
+
+const Status = ({ status }) => (
   <>
     <button id="status" type="button">{status}</button>
   </>

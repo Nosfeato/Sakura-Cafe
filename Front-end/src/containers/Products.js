@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 /**
  * Local import
  */
-import Products from 'src/components/Products';
+import Products from 'src/components/Main/Products';
 
 // Action Creators
 import { getProductsList, getProductsCategories } from 'src/store/reducer';

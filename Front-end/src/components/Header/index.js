@@ -28,7 +28,7 @@ class Header extends React.Component {
 
   defineModulesToLoad = (username, status) => {
     if (username !== undefined && status !== undefined) {
-      return [<Username key="username" />, <Status key="status" />, <SignOutLink key="signout" />, <Cart key="cart" />];
+      return [<Username key="username" username={username} />, <Status key="status" status={status} />, <SignOutLink key="signout" />, <Cart key="cart" />];
     }
     else {
       return [<SignInLink key="signin" />, <SignUpLink key="signup" />];
@@ -36,7 +36,7 @@ class Header extends React.Component {
   }
 
   render() {
-    const { username = '', status = ''} = this.props;
+    const { username = 'patate', status ='junior'} = this.props;
 
     return (
       <header id="header">
