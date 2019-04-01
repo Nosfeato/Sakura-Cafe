@@ -19,6 +19,8 @@ import Nav from './Nav';
 /**
  * Local import
  */
+import image from 'src/img/logothib2.png';
+
 import './header.scss';
 
 /**
@@ -56,7 +58,7 @@ class Header extends React.Component {
             </label>
             <p id="animation__text">Animation</p>
           </div> { /* End of onoffswitch */ }
-          <Link to="/"><img src="src/img/logothib2.png" id="logo" alt="sakura-logo" /></Link>
+          <Link to="/"><img src={image} id="logo" alt="sakura-logo" /></Link>
           <div id="session__info">
             {this.defineComponentsToLoad(username, status)}
           </div>
