@@ -8,6 +8,7 @@ import PropTypes from 'prop-types';
  * Local import
  */
 import './map.scss';
+import image from 'src/img/map.gif';
 
 /**
  * Code
@@ -15,7 +16,7 @@ import './map.scss';
 
 const Map = () => (
   <div id="map">
-    <img src="src/img/map.gif" alt="map" />
+    <img src={image} alt="map" />
   </div>
 );
 
