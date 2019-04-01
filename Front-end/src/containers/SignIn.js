@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 /**
  * Local import
  */
-import SignIn from 'src/components/SignIn';
+import SignIn from 'src/components/Header/SignIn';
 
 // Action Creators
 import { changeInput, connectingUser } from 'src/store/reducer';
@@ -21,6 +21,8 @@ import { changeInput, connectingUser } from 'src/store/reducer';
 const mapStateToProps = state => ({
   usernameValue: state.signin__username__input,
   passwordValue: state.signin__password__input,
+  username: state.username,
+  status: state.status,
 });
 
 /* === Actions ===

@@ -2,8 +2,11 @@
  * Initial State
  */
 const initialState = {
-  products: [],
   value: '',
+  news_selection: 0,
+  products_selection: 0,
+  newsList: ['hi', 'patate', 'mynameisbabar', 'hey', 'Sindy', 'Logan'],
+  productsList: ['hi', 'patate', 'mynameisbabar', 'hey', 'Sindy', 'Logan'],
 };
 
 /**
@@ -14,11 +17,15 @@ const CHANGE_INPUT = 'CHANGE_INPUT';
 
 export const GET_NEWS_LIST = 'GET_NEWS_LIST';
 export const NEWS_RECEIVED = 'NEWS_RECEIVED';
+export const CHANGE_VIEW = 'CHANGE_VIEW';
 
 export const CONNECTING_USER = 'CONNECTING_USER';
 export const CONNECT_USER = 'CONNECT_USER';
 export const DISCONNECT_USER = 'DISCONNECT_USER';
 
+
+export const GET_PRODUCT_CATEGORIES = 'GET_PRODUCT_CATEGORIES';
+export const CATEGORIES_RECEIVED = 'CATEGORIES_RECEIVED';
 export const GET_PRODUCTS_LIST = 'GET_PRODUCTS_LIST';
 export const PRODUCTS_RECEIVED = 'PRODUCTS_RECEIVED';
 
@@ -31,7 +38,6 @@ export const REGISTER_USER = 'REGISTER_USER';
 
 const reducer = (state = initialState, action = {}) => {
   switch (action.type) {
-
     /**
      * @general actions
      */
@@ -54,8 +60,14 @@ const reducer = (state = initialState, action = {}) => {
     case NEWS_RECEIVED:
       return {
         ...state,
-        news: [action.news],
+        newsList: [action.news],
         loading_news: false,
+      };
+
+    case CHANGE_VIEW:
+      return {
+        ...state,
+        [action.id]: action.int,
       };
 
     /**
@@ -94,15 +106,30 @@ const reducer = (state = initialState, action = {}) => {
     /**
      * @Product actions
      */
+
+    case GET_PRODUCT_CATEGORIES:
+      return {
+        ...state,
+        loading_products_categories: true,
+      };
+
+    case CATEGORIES_RECEIVED:
+      return {
+        ...state,
+        categoriesLIst: [action.categories],
+        loading_products_categories: false,
+      };
+
     case GET_PRODUCTS_LIST:
       return {
+        ...state,
         loading_products: true,
       };
 
     case PRODUCTS_RECEIVED:
       return {
         ...state,
-        products: [action.products],
+        productsList: [action.products],
         loading_products: false,
       };
 
@@ -140,6 +167,12 @@ export const newsReceived = news => ({
   news,
 });
 
+export const changeView = (int, id) => ({
+  type: CHANGE_VIEW,
+  int,
+  id,
+});
+
 // User actions
 
 export const connectingUser = () => ({
@@ -158,13 +191,22 @@ export const registerUser = () => ({
 
 // Products actions
 
+export const getProductsCategories = () => ({
+  type: GET_PRODUCT_CATEGORIES,
+});
+
+export const categoriesReceived = categories => ({
+  type: categoriesReceived,
+  categories,
+});
+
 export const getProductsList = () => ({
   type: GET_PRODUCTS_LIST,
 });
 
 export const productsReceived = products => ({
   type: PRODUCTS_RECEIVED,
-  results: products,
+  products,
 });
 
 export const disconnect = () => ({
