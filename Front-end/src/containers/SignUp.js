@@ -13,7 +13,6 @@ import SignUp from 'src/components/SignUp';
 // Action Creators
 
 
-
 const mapStateToProps = state => ({
   usernameValue: state.signup__username__input,
   emailValue: state.signup__email__input,
@@ -26,7 +25,7 @@ const mapDispatchToProps = dispatch => ({
     dispatch(changeInput(value, id));
   },
   registerUser: () => {
-    store.dispatch(registerUser());
+    dispatch(registerUser());
   },
 });
 
@@ -36,8 +35,7 @@ const SignUpContainer = connect(
   mapDispatchToProps,
 )(SignUp);
 
-
-
 /**
  * Export
  */
+export default SignUpContainer;

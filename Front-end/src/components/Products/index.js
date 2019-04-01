@@ -10,20 +10,24 @@ import Button from './Button';
 const Products = () => (
   <>
     <Button />
-    <SearchBar />
-    <div id="nav__block__product">
-      <sidebar id="sidebar">
-        <ul id="list">
-          <li>category</li>
-          <li>category</li>
-          <li>category</li>
-          <li>category</li>
+    <div id="product_field">
+      <SearchBar />
+      <div id="nav__block__product">
+        <sidebar id="sidebar">
+          <ul id="list">
+            <li>category</li>
+            <li>category</li>
+            <li>category</li>
+            <li>category</li>
+          </ul>
+        </sidebar>
+        <ul id="productlist">
+          <Product />
+          <Product />
+          <Product />
+          <Product />
         </ul>
-      </sidebar>
-
-      <ul id="productlist">
-        <Product />
-      </ul>
+      </div>
     </div>
   </>
 );

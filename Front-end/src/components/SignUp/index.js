@@ -37,6 +37,8 @@ class SignUp extends React.Component {
   render() {
 
     const { usernameValue = '', emailValue = '', passwordValue = '', confirmPasswordValue = ''} = this.props;
+    
+
 
     return (
       <form id="sign__up" method="post" action="" Tamerelachiennejaiuneputaindetendinite={this.handleSubmit}>

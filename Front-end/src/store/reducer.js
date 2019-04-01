@@ -17,7 +17,7 @@ export const NEWS_RECEIVED = 'NEWS_RECEIVED';
 
 export const CONNECTING_USER = 'CONNECTING_USER';
 export const CONNECT_USER = 'CONNECT_USER';
-
+export const DISCONNECT_USER = 'DISCONNECT_USER';
 
 export const GET_PRODUCTS_LIST = 'GET_PRODUCTS_LIST';
 export const PRODUCTS_RECEIVED = 'PRODUCTS_RECEIVED';
@@ -81,6 +81,14 @@ const reducer = (state = initialState, action = {}) => {
       return {
         ...state,
         loading_user: true,
+      };
+
+    case DISCONNECT_USER:
+      return {
+        ...state,
+        username: null,
+        status: null,
+        connected: false,
       };
 
     /**
@@ -157,6 +165,10 @@ export const getProductsList = () => ({
 export const productsReceived = products => ({
   type: PRODUCTS_RECEIVED,
   results: products,
+});
+
+export const disconnect = () => ({
+  type: DISCONNECT_USER,
 });
 
 

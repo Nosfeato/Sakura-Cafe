@@ -4,7 +4,7 @@ import './product.scss';
 
 
 const Product = () => (
-  <li>
+  <li className="productlist_li">
     <article className="product">
       <img className="product__image" src="./src/img/teas/tea1.jpg" alt="article_x" />
       <div className="product__description">
