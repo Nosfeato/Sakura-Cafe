@@ -6,10 +6,10 @@ import { connect } from 'react-redux';
 /**
  * Local import
  */
-import Header from 'src/components/Header';
+import Arrow from 'src/components/Main/ArrowButton';
 
 // Action Creators
-import {} from 'src/store/reducer';
+import { changeView } from 'src/store/reducer';
 
 /* === State (données) ===
  * - mapStateToProps retroune un objet de props pour le composant de présentation
@@ -18,11 +18,7 @@ import {} from 'src/store/reducer';
  *  - ownProps : les props passées au container
  * Pas de data à transmettre ? const mapStateToProps = null;
  */
-
-
 const mapStateToProps = state => ({
-  username: state.username,
-  status: state.status,
 });
 
 /* === Actions ===
@@ -33,13 +29,16 @@ const mapStateToProps = state => ({
  * Pas de disptach à transmettre ? const mapDispatchToProps = {};
  */
 const mapDispatchToProps = dispatch => ({
+  changeSelection: (int, id) => {
+    dispatch(changeView(int, id));
+  },
 });
 
 // Container
-const HeaderContainer = connect(
+const ArrowContainer = connect(
   mapStateToProps,
   mapDispatchToProps,
-)(Header);
+)(Arrow);
 
 /* 2 temps
 const createContainer = connect(mapStateToProps, mapDispatchToProps);
@@ -49,4 +48,4 @@ const ExampleContainer = createContainer(Example);
 /**
  * Export
  */
-export default HeaderContainer;
+export default ArrowContainer;

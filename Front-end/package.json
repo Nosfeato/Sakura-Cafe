@@ -1,4 +1,5 @@
 {
+  "homepage": ".",
   "name": "react-modele",
   "devDependencies": {
     "@babel/core": "^7.3.4",

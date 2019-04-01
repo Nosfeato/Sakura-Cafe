@@ -21,6 +21,8 @@ import { changeInput, connectingUser } from 'src/store/reducer';
 const mapStateToProps = state => ({
   usernameValue: state.signin__username__input,
   passwordValue: state.signin__password__input,
+  username: state.username,
+  status: state.status,
 });
 
 /* === Actions ===

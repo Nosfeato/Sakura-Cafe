@@ -13,6 +13,8 @@ import Cart from 'src/components/Header/Cart';
 import SignIn from 'src/containers/SignIn';
 import SignUp from 'src/containers/SignUp';
 
+import 'src/components/Main/main.scss';
+
 const Main = () => (
   <main>
     <Switch>

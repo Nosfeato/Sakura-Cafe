@@ -2,8 +2,11 @@
  * Initial State
  */
 const initialState = {
-  products: [],
   value: '',
+  news_selection: 0,
+  products_selection: 0,
+  newsList: ['hi', 'patate', 'mynameisbabar', 'hey', 'Sindy', 'Logan'],
+  productsList: ['hi', 'patate', 'mynameisbabar', 'hey', 'Sindy', 'Logan'],
 };
 
 /**
@@ -14,6 +17,7 @@ const CHANGE_INPUT = 'CHANGE_INPUT';
 
 export const GET_NEWS_LIST = 'GET_NEWS_LIST';
 export const NEWS_RECEIVED = 'NEWS_RECEIVED';
+export const CHANGE_VIEW = 'CHANGE_VIEW';
 
 export const CONNECTING_USER = 'CONNECTING_USER';
 export const REGISTER_USER = 'REGISTER_USER';
@@ -54,8 +58,14 @@ const reducer = (state = initialState, action = {}) => {
     case NEWS_RECEIVED:
       return {
         ...state,
-        newslist: [action.news],
+        newsList: [action.news],
         loading_news: false,
+      };
+
+    case CHANGE_VIEW:
+      return {
+        ...state,
+        [action.id]: action.int,
       };
 
     /**
@@ -144,6 +154,12 @@ export const getNews = () => ({
 export const newsReceived = news => ({
   type: NEWS_RECEIVED,
   news,
+});
+
+export const changeView = (int, id) => ({
+  type: CHANGE_VIEW,
+  int,
+  id,
 });
 
 // User actions

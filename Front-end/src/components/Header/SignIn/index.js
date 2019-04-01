@@ -4,6 +4,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
 /**
  * Local import
  */
@@ -28,6 +29,7 @@ class SignIn extends React.Component {
 
     tryConnectingUser();
   }
+
 
   render() {
     const { usernameValue = '', passwordValue = ''} = this.props;

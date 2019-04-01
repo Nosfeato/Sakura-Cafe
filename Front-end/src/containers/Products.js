@@ -20,7 +20,11 @@ import { getProductsList, getProductsCategories } from 'src/store/reducer';
  */
 const mapStateToProps = state => ({
   productsList: state.productsList,
-  productsCategoriesList: state.categoriesList,
+  selectedProducts: state.products_selection,
+
+  CategoryList: state.categoriesList,
+  selectedCategories: state.category_selection,
+
 });
 
 /* === Actions ===

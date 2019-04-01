@@ -26,18 +26,25 @@ import './header.scss';
  */
 class Header extends React.Component {
 
-  defineModulesToLoad = (username, status) => {
+  defineComponentsToLoad = (username, status) => {
     if (username !== undefined && status !== undefined) {
-      return [<Username key="username" username={username} />, <Status key="status" status={status} />, <SignOutLink key="signout" />, <Cart key="cart" />];
+      return [
+        <Username key="username" username={username} />,
+        <Status key="status" status={status} />,
+        <SignOutLink key="signout" />,
+        <Cart key="cart" />,
+      ];
     }
     else {
-      return [<SignInLink key="signin" />, <SignUpLink key="signup" />];
+      return [
+        <SignInLink key="signin" />,
+        <SignUpLink key="signup" />,
+      ];
     }
   }
 
   render() {
-    const { username = 'patate', status ='junior'} = this.props;
-
+    const { username, status } = this.props;
     return (
       <header id="header">
         <div id="head">
@@ -51,7 +58,7 @@ class Header extends React.Component {
           </div> { /* End of onoffswitch */ }
           <Link to="/"><img src="src/img/logothib2.png" id="logo" alt="sakura-logo" /></Link>
           <div id="session__info">
-            {this.defineModulesToLoad(username, status)}
+            {this.defineComponentsToLoad(username, status)}
           </div>
         </div>
         <Nav />

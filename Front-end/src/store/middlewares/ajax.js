@@ -8,7 +8,7 @@ const ajaxMiddleware = store => next => (action) => {
   switch (action.type) {
 
     case GET_NEWS_LIST: {
-      axios.post('http://localhost/wp-json/wp/v2/posts/news')
+      axios.post('http://localhost/Apotheose/Project/sakura-cafe/Back-end/wp-json/wp/v2/posts/news')
         .then((response) => {
           console.log('News list successfully loaded');
 
@@ -24,7 +24,7 @@ const ajaxMiddleware = store => next => (action) => {
     case CONNECTING_USER: {
       const state = store.getState();
 
-      axios.post('http://localhost/wp-json/wp/v2/connect', { username: state.signin__username__input, password: state.signin__password__input })
+      axios.post('http://localhost/Apotheose/Project/sakura-cafe/Back-end/wp-json/wp/v2/users/connect', { username: state.signin__username__input, password: state.signin__password__input })
         .then((response) => {
           console.log('User found in database');
 
@@ -39,7 +39,7 @@ const ajaxMiddleware = store => next => (action) => {
     case REGISTER_USER: {
       const state = store.getState();
 
-      axios.post('http://localhost/wp-json/wp/v2/register', { username: state.signup__username__input, email: state.signup__email__input, password: state.signup__password__input })
+      axios.post('http://localhost/Apotheose/Project/sakura-cafe/Back-end/wp-json/wp/v2/users/register', { username: state.signup__username__input, email: state.signup__email__input, password: state.signup__password__input })
         .then((response) => {
           console.log('Added user to database');
 
@@ -52,7 +52,7 @@ const ajaxMiddleware = store => next => (action) => {
     }
 
     case GET_PRODUCTS_LIST: {
-      axios.post('http://localhost/wp-json/wp/v2/posts/products')
+      axios.post('http://localhost/Apotheose/Project/sakura-cafe/Back-end/wp-json/wp/v2/posts/products')
         .then((response) => {
           console.log('Product list successfully loaded');
 

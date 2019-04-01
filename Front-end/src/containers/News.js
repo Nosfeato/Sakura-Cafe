@@ -19,7 +19,8 @@ import { getNews } from 'src/store/reducer';
  * Pas de data à transmettre ? const mapStateToProps = null;
  */
 const mapStateToProps = state => ({
-  newslist: state.newslist,
+  newsList: state.newsList,
+  selectedNews: state.news_selection,
 });
 
 /* === Actions ===

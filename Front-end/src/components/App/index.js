@@ -7,7 +7,7 @@ import React from 'react';
  * Local import
  */
 import './app.scss';
-import Header from 'src/components/Header';
+import Header from 'src/containers/Header';
 
 import Main from 'src/components/Main';
 
