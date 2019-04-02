@@ -36,3 +36,18 @@
     font-weight: bold;
     width: 80px;
 }
+
+/** Validation spans **/
+
+.success {
+  font-size: .8rem;
+  font-weight: 500;
+  color: green;
+
+}
+
+.failed {
+  font-size: .8rem;
+  font-weight: 500;
+  color: red;
+}

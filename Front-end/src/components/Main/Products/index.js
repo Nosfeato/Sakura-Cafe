@@ -90,6 +90,9 @@ class Products extends React.Component {
             <ul id="product_selection">
               {this.shouldArrowRender('up', 'products')}
               <Product />
+              <Product />
+              <Product />
+              <Product />
               {this.shouldArrowRender('down', 'products')}
             </ul>
           </div>
