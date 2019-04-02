@@ -75,22 +75,24 @@ class Products extends React.Component {
     return (
       <>
         <Button />
-        <SearchBar />
-        <div id="nav__block__product">
-          <aside id="sidebar">
-            {this.shouldArrowRender('up', 'category')}
-            <ul id="category_selection">
-              {categoryList.map(category => (
-                <Category key={category.id} name={category.name} />
-              ))}
+        <div id="product_field">
+          <SearchBar />
+          <div id="nav__block__product">
+            <aside id="sidebar">
+              {this.shouldArrowRender('up', 'category')}
+              <ul id="category_selection">
+                {categoryList.map(category => (
+                  <Category key={category.id} name={category.name} />
+                ))}
+              </ul>
+              {this.shouldArrowRender('down', 'category')}
+            </aside>
+            <ul id="product_selection">
+              {this.shouldArrowRender('up', 'products')}
+              <Product />
+              {this.shouldArrowRender('down', 'products')}
             </ul>
-            {this.shouldArrowRender('down', 'category')}
-          </aside>
-          <ul id="product_selection">
-            {this.shouldArrowRender('up', 'products')}
-            <Product />
-            {this.shouldArrowRender('down', 'products')}
-          </ul>
+          </div>
         </div>
       </>
 
