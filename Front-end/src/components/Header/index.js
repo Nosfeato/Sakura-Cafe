@@ -53,12 +53,13 @@ class Header extends React.Component {
           <div className="onoffswitch">
             <input type="checkbox" name="onoffswitch" className="onoffswitch-checkbox" id="myonoffswitch" />
             <label id="animation__selector" className="onoffswitch-label" htmlFor="myonoffswitch">
-              <span className="onoffswitch-inner" />
-              <span className="onoffswitch-switch" />
+            <span className="onoffswitch-inner" />
+            <span className="onoffswitch-switch" />
             </label>
             <p id="animation__text">Animation</p>
-          </div> { /* End of onoffswitch */ }
-          <Link to="/"><img src={image} id="logo" alt="sakura-logo" /></Link>
+            </div> { /* End of onoffswitch */ }
+            <Cart />
+            <Link to="/"><img src={image} id="logo" alt="sakura-logo" /></Link>
           <div id="session__info">
             {this.defineComponentsToLoad(username, status)}
           </div>

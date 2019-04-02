@@ -23,6 +23,12 @@
 
 /** Sign Buttons **/
 
+#session__info {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
 #session__info button {
   background-color: rgba(#FE00B5, 0.1);
   border-radius: 40%;
@@ -32,6 +38,8 @@
   font-size: 1em;
   font-weight: 600;
   height: 3em;
+  margin-left: 1em;
+
   
 }
 
@@ -49,7 +57,7 @@
 .onoffswitch {
   position: relative; width: 40px;
   -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-}
+  }
 .onoffswitch-checkbox {
   display: none;
 }
@@ -143,7 +151,7 @@
     border: none;
     box-shadow: none;
     background-color: rgba(#FFF, 0);
-    font-size: 18px;
+    font-size: 1.3;
     font-weight: bold;
   }
 }
