@@ -11,7 +11,7 @@
 
 #product_field {
   width: 75%;
-  margin: 0 auto;
+  margin: 9rem auto;
   border: 1px solid black;
 }
 
@@ -41,19 +41,24 @@
 
 #sidebar {
   display: flex;
-  color: red;
+  color: red;  
 }
 
-#productlist {
+
+li {
+ margin-top: 3rem;
+ margin-left: 1rem;
+}
+
+#product_selection {
   display: flex;
   flex-wrap: wrap;
 }
 
+
 .productlist_li {
   margin: 1em;
   justify-content: space-around;
-
-  
 }
 
 /* articles */
@@ -93,15 +98,16 @@
   #nav__block__product {
     flex-direction: column;
     width: 100%;  
-    align-items: center;
-    
+    align-items: center; 
   }
 
 
   #productlist {
     align-items: stretch;
+    
   }
   .productlist_li {
+    margin-left: 2.5rem;
     /* TODO: align products in <ul> */
   }
   
@@ -112,6 +118,10 @@
     height: 3em;
     align-items: center;
 
+  }
+
+  li {
+    margin-top: 0.2rem;
   }
 
 }
