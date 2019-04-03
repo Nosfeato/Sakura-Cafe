@@ -77,6 +77,7 @@ class Products extends React.Component {
         <Button />
         <div id="product_field">
           <SearchBar />
+          {this.shouldArrowRender('up', 'products')}
           <div id="nav__block__product">
             <aside id="sidebar">
               {this.shouldArrowRender('up', 'category')}
@@ -88,14 +89,16 @@ class Products extends React.Component {
               {this.shouldArrowRender('down', 'category')}
             </aside>
             <ul id="product_selection">
-              {this.shouldArrowRender('up', 'products')}
               <Product />
               <Product />
               <Product />
               <Product />
-              {this.shouldArrowRender('down', 'products')}
+              <Product />
+              <Product />
+              <Product />
             </ul>
           </div>
+          {this.shouldArrowRender('down', 'products')}
         </div>
       </>
 
