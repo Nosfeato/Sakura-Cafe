@@ -2,25 +2,15 @@
   background-image: url('../../img/up_button.png');
   background-repeat: no-repeat;
   background-size: cover;
+  display: block;
+  margin: auto;
 }
 #down_arrow {
   background-image: url('../../img/down_button.png');
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-#news_selection {
-  margin-top: 5em
-}
-
-#down_arrow{
-  display: block;
-  margin: auto;
-}
-
-#up_arrow{
-  display: block;
-  margin: auto;
+  display:block; 
+  margin: auto; 
 }
 
 main {
