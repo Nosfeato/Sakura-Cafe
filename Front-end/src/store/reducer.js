@@ -1,4 +1,4 @@
-/**
+  /**
  * Initial State
  */
 const initialState = {
@@ -6,7 +6,49 @@ const initialState = {
   news_selection: 0,
   products_selection: 0,
   newsList: ['hi', 'patate', 'mynameisbabar', 'hey', 'Sindy', 'Logan'],
-  productsList: ['hi', 'patate', 'mynameisbabar', 'hey', 'Sindy', 'Logan'],
+  productsList: [
+    {
+      id: 1,
+      name: 'Product1',
+      description: "J'aime les patates et le fromage",
+    },
+    {
+      id: 2,
+      name: 'Product2',
+      description: "J'aime les patates et le fromage",
+    },
+    {
+      id: 3,
+      name: 'Product3',
+      description: "J'aime les patates et le fromage",
+    },
+    {
+      id: 4,
+      name: 'Product4',
+      description: "J'aime les patates et le fromage",
+    },
+    {
+      id: 5,
+      name: 'Product5',
+      description: "J'aime les patates et le fromage",
+    },
+    {
+      id: 6,
+      name: 'Product6',
+      description: "J'aime les patates et le fromage",
+    },
+    {
+      id: 7,
+      name: 'Product7',
+      description: "J'aime les patates et le fromage",
+    },
+    {
+      id: 8,
+      name: 'Product8',
+      description: "J'aime les patates et le fromage",
+    },
+  ],
+  cart_list: [],
 };
 
 /**
@@ -30,6 +72,8 @@ export const GET_PRODUCTS_LIST = 'GET_PRODUCTS_LIST';
 export const PRODUCTS_RECEIVED = 'PRODUCTS_RECEIVED';
 
 export const REGISTER_USER = 'REGISTER_USER';
+
+export const ADD_TO_CART = 'ADD_TO_CART';
 
 
 /**
@@ -129,8 +173,14 @@ const reducer = (state = initialState, action = {}) => {
     case PRODUCTS_RECEIVED:
       return {
         ...state,
-        productsList: [action.products],
+        productsList: action.products,
         loading_products: false,
+      };
+
+    case ADD_TO_CART:
+      return {
+        ...state,
+        cart_list: [].push(action.name, action.description),
       };
 
 
@@ -213,6 +263,11 @@ export const disconnect = () => ({
   type: DISCONNECT_USER,
 });
 
+export const addToCart = (name, description) => ({
+  type: ADD_TO_CART,
+  name,
+  description,
+});
 
 /**
  * Selectors
