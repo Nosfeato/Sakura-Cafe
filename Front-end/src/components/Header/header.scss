@@ -101,19 +101,22 @@
 #nav-links-list {
   display: flex;
   justify-content: space-around;
-  height: 2em;
-  margin-top: 4em;
+  height: 8em;
+  margin-top: 2em;
+  border: red 3px solid;
 
 }
 
 .nav-link {
   display: flex;
   width: 20%;
-  max-width: 200px;
-  height: 2.5em;
+  max-width: 100px;
+  height: 2em;
   justify-content: space-around;
   text-align: center;
   align-items: center;
+  
+  
   font-size: 2em;
   color: #000;
   /*  border: 1px black solid;*/
