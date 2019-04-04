@@ -1,0 +1,2 @@
+2019-03-25T19:24:09+00:00 CRITICAL Cannot redeclare wp_authenticate() (previously declared in /var/www/html/projet/sakura-cafe/wp/wp-includes/pluggable.php:521) dans /var/www/html/projet/sakura-cafe/content/themes/sakura/functions.php à la ligne 100
+
