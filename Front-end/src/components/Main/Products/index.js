@@ -9,14 +9,14 @@ import Category from 'src/components/Main/Products/Category';
 import Arrow from 'src/containers/Arrow';
 
 class Products extends React.Component {
-
-  componentDidMount = () => {
+  // quand mon composant est chargé la première fois (pas update donc)
+  componentDidMount = () => { 
     const { getProducts, getCategories } = this.props;
-
     getCategories();
     getProducts();
   }
 
+  // choix de chargement ou non de chaques flèches
   shouldArrowRender = (arrow, type) => {
 
     const name = type.concat('_selection');
@@ -52,6 +52,7 @@ class Products extends React.Component {
 
   }
 
+  // une liste d'exemple en attendant requête ajax pour catégories , donc temporaire après je vire
   render() {
     const categoryList = [
       {
@@ -72,6 +73,9 @@ class Products extends React.Component {
       },
     ];
 
+    // va chercher ProductsList (la liste de produit de ma requête ajax) dans les props (merci container Products)
+    const { productsList } = this.props;
+
     return (
       <>
         <Button />
@@ -89,13 +93,17 @@ class Products extends React.Component {
               {this.shouldArrowRender('down', 'category')}
             </aside>
             <ul id="product_selection">
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-              <Product />
+              {this.shouldArrowRender('up', 'products')}
+              {/* Pour chaque produit dans ma liste de produit créé un composant Produit avec X Y Z */}
+              {productsList.map(product => (
+                <Product
+                  key={product.id}
+                  name={product.name}
+                  description={product.description}
+                />
+              ))}
+              {this.shouldArrowRender('down', 'products')}
+
             </ul>
           </div>
           {this.shouldArrowRender('down', 'products')}
@@ -105,6 +113,5 @@ class Products extends React.Component {
     );
   }
 }
-
 
 export default Products;
