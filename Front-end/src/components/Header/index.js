@@ -5,7 +5,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import image from 'src/assets/img/logothib2.png';
+import image from 'src/assets/img/logo.png';
 
 import Username from 'src/components/Header/Username';
 import Status from 'src/components/Header/Status';
