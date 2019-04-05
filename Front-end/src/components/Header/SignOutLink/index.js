@@ -7,7 +7,6 @@ import PropTypes from 'prop-types';
 /**
  * Local import
  */
-import './signout.scss';
 
 /**
  * Code
@@ -15,7 +14,7 @@ import './signout.scss';
 
 const SignOut = () => (
   <>
-    <button id="sign__out">Disconnect</button>
+    <button id="sign__out" type="button">Disconnect</button>
   </>
 );
 

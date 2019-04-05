@@ -11,11 +11,12 @@ import Arrow from 'src/containers/Arrow';
  * Local import
  */
 import './news.scss';
-import image from 'src/img/panda.png';
+
 
 /**
  * Code
  */
+
 class News extends React.Component {
 
 
@@ -39,18 +40,24 @@ class News extends React.Component {
   }
 
   render() {
+    const { newsList, selectedNews} = this.props;
+
+    const { title, description, image } = newsList[selectedNews];
     return (
       <>
-        {this.shouldArrowRender('up')}
-        <div id="news_selection" className="news">
-          <img className="news__image" alt="" src={image} />
-          <div className="news__text">
-            <span className="news__date">Date</span>
-            <h1 className="news__title">Faites chauffer les bouilloires, voici l'info du soir !!!</h1>
-            <p className="news__description">Tributus maxime est maximis meum homines exigua in est necessitatem cum ex dis reprehendant quindecim ad magis Ergo admirentur ex quae publicae hominis tributus exigua meum quid cum sententia eadem Rei dignitatem immortalibus dierum et immortalibus immortalibus dignitatem antea satis idem pertinerent meum immortalibus hominis immortalibus cum ex causa. </p>
+        <div id="news__block">
+          {this.shouldArrowRender('up')}
+
+          <div id="news_selection" className="news">
+            <img className="news__image" alt="" src={image} />
+            <div className="news__text">
+              <span className="news__date">date</span>
+              <h1 className="news__title">{title}</h1>
+              <p className="news__description">{description}</p>
+            </div>
           </div>
+          {this.shouldArrowRender('down')}
         </div>
-        {this.shouldArrowRender('down')}
       </>
 
     );

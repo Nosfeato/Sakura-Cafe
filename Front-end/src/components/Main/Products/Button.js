@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './products.scss';
 
 // faire une class. onclick,nomdefonction
 
 class Button extends React.Component {
 
   componentDidMount () {
-    const button = document.getElementById("burger-button");
+    const button = document.getElementById("burger__button");
 
     button.addEventListener('click', this.handleClick);
     button.addEventListener('touchstart', this.handleClick);
@@ -21,7 +20,7 @@ class Button extends React.Component {
   render() {
     return (
       <>
-        <button id="burger-button" className="nav-button" type="button">&#9776;</button>
+        <button id="burger__button" className="nav__button" type="button">&#9776;</button>
       </>
     );
   }

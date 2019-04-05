@@ -14,10 +14,10 @@ import { Link } from 'react-router-dom';
  */
 
 const Nav = () => (
-  <ul id="nav-links-list">
-    <li className="nav-link"><Link to="/">Home</Link></li>
-    <li className="nav-link"><Link to="/products">Products</Link></li>
-    <li className="nav-link"><Link to="/map">Map</Link></li>
+  <ul id="nav__links__list">
+    <li className="nav__link"><Link to="/">Home</Link></li>
+    <li className="nav__link"><Link to="/products">Products</Link></li>
+    <li className="nav__link"><Link to="/map">Map</Link></li>
   </ul>
 );
 

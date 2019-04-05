@@ -1,5 +1,5 @@
 {
-  "homepage": ".",
+  "homepage": "http://sakura-cafe.local",
   "name": "react-modele",
   "devDependencies": {
     "@babel/core": "^7.3.4",
@@ -50,9 +50,11 @@
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
+    "react-async-script-loader": "^0.3.0",
     "react-dom": "^16.8.3",
     "react-redux": "^6.0.1",
     "react-router-dom": "^5.0.0",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "woocommerce-api": "https://github.com/sabarnix/woocommerce-api.git"
   }
 }

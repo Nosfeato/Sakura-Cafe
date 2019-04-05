@@ -5,8 +5,9 @@ const initialState = {
   value: '',
   news_selection: 0,
   products_selection: 0,
-  newsList: ['hi', 'patate', 'mynameisbabar', 'hey', 'Sindy', 'Logan'],
-  productsList: ['hi', 'patate', 'mynameisbabar', 'hey', 'Sindy', 'Logan'],
+  newsList: [{}],
+  productsList: [],
+  cart_list: [],
 };
 
 /**
@@ -22,11 +23,13 @@ export const CHANGE_VIEW = 'CHANGE_VIEW';
 export const CONNECTING_USER = 'CONNECTING_USER';
 export const REGISTER_USER = 'REGISTER_USER';
 export const CONNECT_USER = 'CONNECT_USER';
+export const DISCONNECT_USER = 'DISCONNECT_USER';
 
 export const GET_PRODUCT_CATEGORIES = 'GET_PRODUCT_CATEGORIES';
 export const CATEGORIES_RECEIVED = 'CATEGORIES_RECEIVED';
 export const GET_PRODUCTS_LIST = 'GET_PRODUCTS_LIST';
 export const PRODUCTS_RECEIVED = 'PRODUCTS_RECEIVED';
+export const ADD_TO_CART = 'ADD_TO_CART';
 
 
 /**
@@ -58,7 +61,7 @@ const reducer = (state = initialState, action = {}) => {
     case NEWS_RECEIVED:
       return {
         ...state,
-        newsList: [action.news],
+        newsList: action.news,
         loading_news: false,
       };
 
@@ -92,6 +95,13 @@ const reducer = (state = initialState, action = {}) => {
         loading_user: false,
       };
 
+    case DISCONNECT_USER:
+      return {
+        ...state,
+        username: null,
+        status: null,
+        connected: false,
+      };
 
     /**
      * @Product actions
@@ -119,10 +129,15 @@ const reducer = (state = initialState, action = {}) => {
     case PRODUCTS_RECEIVED:
       return {
         ...state,
-        productsList: [action.products],
+        productsList: action.products,
         loading_products: false,
       };
 
+    case ADD_TO_CART:
+      return {
+        ...state,
+        cart_list: state.cart_list.push(action.name, action.description, action.image),
+      };
       /**
        * default action
        */
@@ -178,6 +193,9 @@ export const registerUser = () => ({
   type: REGISTER_USER,
 });
 
+export const disconnect = () => ({
+  type: DISCONNECT_USER,
+});
 
 // Products actions
 
@@ -199,7 +217,12 @@ export const productsReceived = products => ({
   products,
 });
 
-
+export const addToCart = (name, description, image) => ({
+  type: ADD_TO_CART,
+  name,
+  description,
+  image,
+});
 /**
  * Selectors
  */

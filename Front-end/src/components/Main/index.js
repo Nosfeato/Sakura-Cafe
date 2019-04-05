@@ -9,7 +9,7 @@ import Map from 'src/components/Main/Map';
 import LegalMentions from 'src/components/Footer/LegalMentions';
 import Producers from 'src/components/Footer/Producers';
 
-import Cart from 'src/components/Header/Cart';
+import Cart from 'src/containers/Cart';
 import SignIn from 'src/containers/SignIn';
 import SignUp from 'src/containers/SignUp';
 

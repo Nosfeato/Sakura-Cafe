@@ -20,13 +20,12 @@ class ArrowButton extends React.Component {
     const list = evt.target.getAttribute('data-list');
     const selection = Number(evt.target.getAttribute('data-selection'));
 
-    if (evt.target.id === 'up_arrow' && selection !== 0) {
+    if (evt.target.id === 'up__arrow' && selection !== 0) {
       const newValue = (selection - 1);
       changeSelection(newValue, id);
     }
-    else if (evt.target.id === 'down_arrow' && list > selection) {
+    else if (evt.target.id === 'down__arrow' && list > selection) {
       const newValue = (selection + 1);
-      console.log(newValue);
       changeSelection(newValue, id);
     }
   }
@@ -34,10 +33,10 @@ class ArrowButton extends React.Component {
   selectArrowToRender = () => {
     const { selectedArrowModule, data, listLength, selection } = this.props;
     if (selectedArrowModule === 'up') {
-      return (<button id="up_arrow" type="button" data-parent-id={data} data-list={listLength} data-selection={selection} onClick={this.onClick}>Up</button>);
+      return (<button id="up__arrow" type="button" data-parent-id={data} data-list={listLength} data-selection={selection} onClick={this.onClick} />);
     }
     if (selectedArrowModule === 'down') {
-      return (<button id="down_arrow" type="button" data-parent-id={data} data-list={listLength} data-selection={selection} onClick={this.onClick}>Down</button>);
+      return (<button id="down__arrow" type="button" data-parent-id={data} data-list={listLength} data-selection={selection} onClick={this.onClick} />);
     }
   }
 

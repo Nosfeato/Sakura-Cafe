@@ -21,7 +21,7 @@ import store from 'src/store';
 // 1. Le composant racine à rendre (le tronc de l'arbre)
 const rootComponent = (
   <Provider store={store}>
-    <Router>
+    <Router basename="/">
       <Route component={App} />
     </Router>
   </Provider>

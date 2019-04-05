@@ -41,6 +41,7 @@ module.exports = {
     // Cible des bundles
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
+    // publicPath: '/Apotheose/Project/sakura-cafe/Front-end/dist/',
   },
   // Optimisation pour le build
   optimization: {

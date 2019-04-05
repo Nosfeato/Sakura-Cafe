@@ -5,6 +5,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import image from 'src/assets/img/logothib2.png';
 
 import Username from 'src/components/Header/Username';
 import Status from 'src/components/Header/Status';
@@ -19,7 +20,7 @@ import Nav from './Nav';
 /**
  * Local import
  */
-import image from 'src/img/logothib2.png';
+
 
 import './header.scss';
 
@@ -51,10 +52,10 @@ class Header extends React.Component {
       <header id="header">
         <div id="head">
           <div className="onoffswitch">
-            <input type="checkbox" name="onoffswitch" className="onoffswitch-checkbox" id="myonoffswitch" />
-            <label id="animation__selector" className="onoffswitch-label" htmlFor="myonoffswitch">
-              <span className="onoffswitch-inner" />
-              <span className="onoffswitch-switch" />
+            <input type="checkbox" name="onoffswitch" className="onoffswitch__checkbox" id="myonoffswitch" />
+            <label id="animation__selector" className="onoffswitch__label" htmlFor="myonoffswitch">
+              <span className="onoffswitch__inner" />
+              <span className="onoffswitch__switch" />
             </label>
             <p id="animation__text">Animation</p>
           </div> { /* End of onoffswitch */ }

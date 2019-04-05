@@ -20,6 +20,8 @@ class SignIn extends React.Component {
     const { changeInput } = this.props;
 
     changeInput(value, id);
+
+    this.validateInput(value, id);
   }
 
   handleSubmit = (evt) => {
@@ -28,6 +30,36 @@ class SignIn extends React.Component {
     const { tryConnectingUser } = this.props;
 
     tryConnectingUser();
+  }
+
+  validateInput = (value, id) => {
+    if (id === 'signin__username__input') {
+      const span = document.getElementById('signin_username_validation');
+
+      if (value.length < 5) {
+        span.className = 'failed';
+        span.textContent = 'Username needs to be a minimum of 5 characters';
+      }
+      else {
+        span.className = 'success';
+        span.textContent = 'OK !';
+      }
+    }
+    else if (id === 'signin__password__input') {
+      const span = document.getElementById('signin_password_validation');
+      const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[*_%$@.!#-])\S{7,}$/;
+      const result = regex.test(String(value));
+      
+      if (result) {
+        span.className = 'success';
+        span.textContent = 'OK !';
+      }
+
+      else {
+        span.className = 'failed';
+        span.textContent = 'Your password should have at least 7 characters,  1 uppercase and 1 special character (* _ % $ @ . ! # -)';     
+      }
+    }
   }
 
 

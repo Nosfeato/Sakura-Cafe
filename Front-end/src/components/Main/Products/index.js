@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Product from 'src/components/Main/Products/Product';
+import Product from 'src/containers/Product';
 import './products.scss';
 import SearchBar from 'src/components/Main/Products/Searchbar';
 import Button from 'src/components/Main/Products/Button';
@@ -72,25 +72,39 @@ class Products extends React.Component {
       },
     ];
 
+    const { productsList } = this.props;
+    console.log(productsList);
     return (
       <>
         <Button />
-        <SearchBar />
-        <div id="nav__block__product">
-          <aside id="sidebar">
-            {this.shouldArrowRender('up', 'category')}
-            <ul id="category_selection">
-              {categoryList.map(category => (
-                <Category key={category.id} name={category.name} />
-              ))}
-            </ul>
-            {this.shouldArrowRender('down', 'category')}
-          </aside>
-          <ul id="product_selection">
-            {this.shouldArrowRender('up', 'products')}
-            <Product />
-            {this.shouldArrowRender('down', 'products')}
-          </ul>
+        <div id="product_field">
+          <SearchBar />
+          {this.shouldArrowRender('up', 'category')}
+          <div id="nav__block__product">
+            <aside id="sidebar">
+              {this.shouldArrowRender('up', 'category')}
+              <ul id="category_selection">
+                {categoryList.map(category => (
+                  <Category key={category.id} name={category.name} />
+                ))}
+              </ul>
+              {this.shouldArrowRender('down', 'category')}
+            </aside>
+            <div id="product_block">
+              {this.shouldArrowRender('up', 'products')}
+              <ul id="product_selection">
+
+                {productsList.map(product => (
+                  <Product
+                    key={product.id}
+                    name={product.name}
+                    description={product.description}
+                  />
+                ))}
+              </ul>
+              {this.shouldArrowRender('down', 'products')}
+            </div>
+          </div>
         </div>
       </>
 
