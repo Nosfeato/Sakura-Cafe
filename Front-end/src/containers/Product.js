@@ -19,6 +19,8 @@ import { addToCart } from 'src/store/reducer';
  * Pas de data à transmettre ? const mapStateToProps = null;
  */
 const mapStateToProps = state => ({
+  searchbarValue: state.searchbar__input,
+  connected: state.connected,
 });
 /* === Actions ===
  * - mapDispatchToProps retroune un objet de props pour le composant de présentation

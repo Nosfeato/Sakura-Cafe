@@ -16,7 +16,7 @@ import './cart.scss';
 
 const Cart = () => (
   <>
-    <button id="cart__button" type="button"><Link to="/cart"><i className="fa fa-shopping-cart"></i></Link></button>
+    <button id="cart__button" className="session__info__button" type="button"><Link to="/cart"><i className="fa fa-shopping-cart"></i></Link></button>
   </>
 );
 

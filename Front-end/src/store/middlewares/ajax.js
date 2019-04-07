@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-import { CONNECTING_USER, connectUser, REGISTER_USER, GET_PRODUCTS_LIST, productsReceived, GET_NEWS_LIST, newsReceived } from 'src/store/reducer';
+import { CONNECTING_USER, connectUser, REGISTER_USER, GET_PRODUCTS_LIST, GET_PRODUCTS_CATEGORIES, categoriesReceived, productsReceived, GET_NEWS_LIST, newsReceived } from 'src/store/reducer';
 
 
 const ajaxMiddleware = store => next => (action) => {
@@ -14,11 +14,12 @@ const ajaxMiddleware = store => next => (action) => {
           console.log('News list successfully loaded');
 
 
-          const filteredResponse = response.data.map(product => ({
-            id: product.id,
-            title: product.title,
-            description: product.content,
-            image: product.image,
+          const filteredResponse = response.data.map(news => ({
+            id: news.id,
+            title: news.title,
+            description: news.content,
+            image: news.image,
+            date: news.date,
           }));
 
           store.dispatch(newsReceived(filteredResponse));
@@ -75,12 +76,33 @@ const ajaxMiddleware = store => next => (action) => {
             name: product.name,
             description: product.description,
             image: product.image,
+            price: product.price,
+            stocks: product.stocks,
           }));
 
           store.dispatch(productsReceived(filteredResponse));
         })
         .catch(() => {
           console.error('Could not load product list');
+        });
+      break;
+    }
+
+
+    case GET_PRODUCTS_CATEGORIES: {
+      axios.get('http://localhost/Apotheose/Project/sakura-cafe/Back-end/wp-json/wp/v2/posts/categories')
+        .then((response) => {
+          console.log('Product categories successfully loaded');
+
+          const filteredResponse = response.data.map(category => ({
+            id: category.id,
+            name: category.name,
+          }));
+
+          store.dispatch(categoriesReceived(filteredResponse));
+        })
+        .catch(() => {
+          console.error('Could not load product categories');
         });
       break;
     }
@@ -94,4 +116,3 @@ const ajaxMiddleware = store => next => (action) => {
 };
 
 export default ajaxMiddleware;
-

@@ -9,15 +9,16 @@ import { Link } from 'react-router-dom';
  * Local import
  */
 
+import './nav.scss';
 /**
  * Code
  */
 
 const Nav = () => (
   <ul id="nav__links__list">
-    <li className="nav__link"><Link to="/">Home</Link></li>
-    <li className="nav__link"><Link to="/products">Products</Link></li>
-    <li className="nav__link"><Link to="/map">Map</Link></li>
+    <li><button className="nav__link" type="button"><Link to="/home">Home</Link></button></li>
+    <li><button className="nav__link" type="button"><Link to="/products">Products</Link></button></li>
+    <li><button className="nav__link" type="button"><Link to="/map">Map</Link></button></li>
   </ul>
 );
 

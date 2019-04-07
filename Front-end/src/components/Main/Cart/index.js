@@ -2,8 +2,8 @@ import React from 'react';
 import PaypalButton from './PaypalButton';
 
 const CLIENT = {
-  sandbox: 'xxxXXX',
-  production: 'xxxXXX',
+  sandbox: 'AeCkfcw8bwNDSbQYiZkqNiJWfBWtkEwROV04s7WxKUsZvnzqfD-btb3afli_7TY9mU4AhshhTcyn2Yin',
+  production: 'AersYlxeYNlxOI9oNkLNWstiY6aIT4vRerg4JHXhQHi8hQOo7POXl82lAHliW6iASnzFXk4x-KqncqEr',
 };
 
 const ENV = process.env.NODE_ENV === 'production'
@@ -22,15 +22,18 @@ class Cart extends React.Component {
       console.log('Cancelled payment!', data);
 
     const {userSelection} = this.props;
+    console.log(userSelection);
 
     return (
 
       <div id="cart__info">
+
         <ul id="selection__list">
           {userSelection.map(product => (
             <ProductInfo name={product.name} image={product.image} />
           ))}
         </ul>
+
         <PaypalButton
           client={CLIENT}
           env={ENV}

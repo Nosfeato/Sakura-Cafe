@@ -9,8 +9,21 @@
 }
 
 .signin__label,
-#register__button {
+#login__button {
   margin: 50px 0 20px 0;
+}
+
+#login__button {
+  display: block;
+  line-height: 18px;
+  font-weight: bold;
+  width: 80px;
+}
+
+#login__button.not--visible {
+  visibility: hidden;
+  width: 0rem;
+  height: 0rem;
 }
 
 .signin__label {
@@ -29,9 +42,4 @@
   background-color: rgba($color: #ffffff, $alpha: 0.5)
 }
 
-#register__button {
-  display: block;
-  line-height: 18px;
-  font-weight: bold;
-  width: 80px;
-}
+

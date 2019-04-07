@@ -11,6 +11,12 @@ import './map.scss';
 
 class Map extends React.Component {
 
+
+  componentDidMount() {
+    const button = document.getElementById('map__load__button');
+    button.addEventListener('click', this.loadMap);
+  }
+
   loadDefault = () => {
 
     const jsxElements = (
@@ -39,8 +45,8 @@ class Map extends React.Component {
   render() {
     return (
       <div id="map">
-        <span>To get the community map </span>
-        <button id="map__load__button" type="button" onClick={this.loadMap}> Click Here </button>
+        <span id="map__info">To check out the community map </span>
+        <button id="map__load__button" type="button"> {'>> Click Here <<'} </button>
       </div>
     );
   }

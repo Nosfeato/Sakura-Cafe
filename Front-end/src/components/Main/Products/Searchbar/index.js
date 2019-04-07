@@ -23,7 +23,7 @@ class SearchBar extends React.Component {
   }
 
   render() {
-    const { searchbarValue } = this.props;
+    const { searchbarValue = ''} = this.props;
 
     return (
       <>

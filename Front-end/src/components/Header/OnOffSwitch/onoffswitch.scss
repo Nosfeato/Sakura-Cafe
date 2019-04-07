@@ -1,0 +1,45 @@
+/** Switch button **/
+
+.onoffswitch {
+  position: relative; width: 40px;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+  }
+.onoffswitch__checkbox {
+  display: none;
+}
+.onoffswitch__label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  height: 7px; padding: 0; line-height: 7px;
+  border: 0px solid #999999; border-radius: 20px;
+  background-color: #CCCCCC;
+}
+.onoffswitch__label:before {
+  content: "";
+  display: block; width: 20px; margin: -6.5px; height: 20px;
+  background: #A1A1A1;
+  position: absolute; top: 0; bottom: 0;
+  right: 29px;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px 0px #757575;
+}
+.onoffswitch__checkbox:checked + .onoffswitch__label {
+  background-color: #FFBFEC;
+}
+.onoffswitch__checkbox:checked + .onoffswitch__label, .onoffswitch__checkbox:checked + .onoffswitch__label:before {
+ border-color: #FFBFEC;
+}
+.onoffswitch__checkbox:checked + .onoffswitch__label .onoffswitch__inner {
+  margin-left: 0;
+}
+.onoffswitch__checkbox:checked + .onoffswitch__label:before {
+  right: 0px; 
+  background-color: #FFFFFF; 
+  box-shadow: 3px 6px 18px 0px rgba(0, 0, 0, 0.2);
+}
+
+#animation__text {
+  margin-top: 30%;
+  font-size: 12px;
+}

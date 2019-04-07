@@ -8,14 +8,17 @@ import PropTypes from 'prop-types';
  * Local import
  */
 
+import './category.scss';
+
+
 /**
  * Code
  */
 
 
 const Category = ({ name }) => (
-  <li>
-    {name}
+  <li className="category__element">
+    <button className="category__element__button" type="button">{name}</button>
   </li>
 );
 
