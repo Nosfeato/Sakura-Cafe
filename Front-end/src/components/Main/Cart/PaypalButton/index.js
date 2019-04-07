@@ -102,4 +102,4 @@ class PaypalButton extends React.Component {
   }
 }
 
-export default scriptLoader('https://www.paypalobjects.com/api/checkout.js')(PaypalButton);
+export default PaypalButton;

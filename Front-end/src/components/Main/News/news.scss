@@ -1,12 +1,19 @@
+#news__block {
+  display: flex;
+  flex-direction: column;
+
+}
 
 .news {
   display: flex;
-  margin: auto;
+  margin: 2rem auto;
   background-color: rgba(rgb(163, 150, 150), 0.5);
-  height: 30%;
-  width: 60%;
+  height: 18rem;
+  width: 40rem;
   padding: 2em;
   max-width: 800px;
+  overflow: hidden;
+
 }
 
 

@@ -8,6 +8,7 @@ import PropTypes from 'prop-types';
  * Local import
  */
 
+import './arrowbutton.scss';
 /**
  * Code
  */
@@ -33,10 +34,10 @@ class ArrowButton extends React.Component {
   selectArrowToRender = () => {
     const { selectedArrowModule, data, listLength, selection } = this.props;
     if (selectedArrowModule === 'up') {
-      return (<button id="up__arrow" type="button" data-parent-id={data} data-list={listLength} data-selection={selection} onClick={this.onClick} />);
+      return (<button id="up__arrow" className="selector" type="button" data-parent-id={data} data-list={listLength} data-selection={selection} onClick={this.onClick} />);
     }
     if (selectedArrowModule === 'down') {
-      return (<button id="down__arrow" type="button" data-parent-id={data} data-list={listLength} data-selection={selection} onClick={this.onClick} />);
+      return (<button id="down__arrow" className="selector" type="button" data-parent-id={data} data-list={listLength} data-selection={selection} onClick={this.onClick} />);
     }
   }
 

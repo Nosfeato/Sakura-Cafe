@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Username = ({ username }) => (
   <>
-    <button id="status" type="button">{username}</button>
+    <button id="status" className="session__info__button" type="button">{username}</button>
   </>
 );
 

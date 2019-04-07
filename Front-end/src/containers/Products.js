@@ -22,9 +22,7 @@ const mapStateToProps = state => ({
   productsList: state.productsList,
   selectedProducts: state.products_selection,
 
-  CategoryList: state.categoriesList,
-  selectedCategories: state.category_selection,
-
+  categoryList: state.categoriesList,
 });
 
 /* === Actions ===

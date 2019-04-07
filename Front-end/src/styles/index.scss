@@ -6,27 +6,9 @@
 } 
 
 body {
-  font-family: 'Kalam', cursive;
-  background-image: url(../assets/img/Sakura-B.png);
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-  min-width: 480px;
-  max-width: 100vw;
-
+  font-size: 1em;
 }
 
-/** RESPONSIVE **/
-@media screen and (max-width: 640px){
-  body {
-    flex-direction: column;
- }
-
-
-}
 
 
 

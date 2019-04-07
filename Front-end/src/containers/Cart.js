@@ -9,7 +9,6 @@ import { connect } from 'react-redux';
 import Cart from 'src/components/Main/Cart';
 
 // Action Creators
-import { addToCart } from 'src/store/reducer';
 
 /* === State (données) ===
  * - mapStateToProps retroune un objet de props pour le composant de présentation

@@ -22,8 +22,10 @@ class News extends React.Component {
 
   componentDidMount() {
     const { getNewsList } = this.props;
-
-    getNewsList();
+    const { newsList } = this.props;
+    if (newsList.length <= 1) {
+      getNewsList();
+    }
   }
 
   shouldArrowRender = (arrow) => {
@@ -33,7 +35,7 @@ class News extends React.Component {
       const jsx = <Arrow selectedArrowModule="up" listLength={listLength} selection={selectedNews} data="news_selection" />;
       return jsx;
     }
-    if (arrow === 'down' && selectedNews < listLength) {
+    if (arrow === 'down' && (selectedNews + 1) < listLength) {
       const jsx = <Arrow selectedArrowModule="down" listLength={listLength} selection={selectedNews} data="news_selection" />;
       return jsx;
     }
@@ -42,24 +44,23 @@ class News extends React.Component {
   render() {
     const { newsList, selectedNews} = this.props;
 
-    const { title, description, image } = newsList[selectedNews];
+    const { title, description, image, date } = newsList[selectedNews];
+
     return (
-      <>
-        <div id="news__block">
-          {this.shouldArrowRender('up')}
+      <div id="news__block">
+        {this.shouldArrowRender('up')}
 
-          <div id="news_selection" className="news">
-            <img className="news__image" alt="" src={image} />
-            <div className="news__text">
-              <span className="news__date">date</span>
-              <h1 className="news__title">{title}</h1>
-              <p className="news__description">{description}</p>
-            </div>
+        <div id="news__selection" className="news">
+          <img className="news__image" alt="" src={image} />
+          <div className="news__text">
+            <span className="news__date">{date}</span>
+            <h1 className="news__title">{title}</h1>
+            <p className="news__description">{description}</p>
           </div>
-          {this.shouldArrowRender('down')}
         </div>
-      </>
 
+        {this.shouldArrowRender('down')}
+      </div>
     );
   }
 }

@@ -1,18 +1,77 @@
 @import 'src/styles/vars';
 
 #app { 
-  padding: 1em;
+  padding: 1rem;
   font-weight: 700;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: 'Kalam', cursive;
+  background-image: url(../../assets/img/Sakura-B.png);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
 }
 
-main {
-  margin: 0 auto;
-  width: 80%;
-  height: 60%;
-  display: flex;
-  flex-wrap: wrap;
- 
+/** RESPONSIVE **/
+@media screen and (max-width: 640px){
+  #app {
+    flex-direction: column;
+  }
+}
+
+
+#app.disappear {
+  display: none;
+}
+
+#animation__left__side {
+  position: absolute;
+  background-image: url('../../assets/img/sakura-left-side.png');
+  background-repeat: no-repeat;
+  background-size: 50vw 100vh; 
+  width: 50.1%;
+  height: 100vh;
+}
+
+#animation__right__side {
+  position: absolute;
+  right: 0;
+  background-image: url('../../assets/img/sakura-right-side.png');
+  background-repeat: no-repeat;
+  background-size: 50vw 100vh; 
+  width: 50.1%;
+  height: 100vh;
+}
+
+#to__home__button {
+
+  position: absolute;
+  left: calc(50% - 6.2rem);
+  top: calc(50% - 10rem);
+  border-radius: 50%;
+  border-style: none;
+  background-image: url('../../assets/img/sakura-button.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 4px 15px rgba(rgb(90, 90, 90), 0.5);
+  width: 15em;
+  height: 15em;
+}
+
+#to__home__button.button--animate {
+  transform: rotate(720deg);
+  transition-duration: 5s;
+
+}
+
+
+#animation__right__side.button--animate {
+  transform: translateX(50rem); 
+  transition-duration: 2s;
+}
+#animation__left__side.button--animate {
+  transform: translateX(-50rem); 
+  transition-duration: 2s;
 }

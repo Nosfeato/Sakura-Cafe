@@ -7,7 +7,9 @@ const initialState = {
   products_selection: 0,
   newsList: [{}],
   productsList: [],
+  categoriesList: [],
   cart_list: [],
+  searchbar__input: '',
 };
 
 /**
@@ -25,7 +27,7 @@ export const REGISTER_USER = 'REGISTER_USER';
 export const CONNECT_USER = 'CONNECT_USER';
 export const DISCONNECT_USER = 'DISCONNECT_USER';
 
-export const GET_PRODUCT_CATEGORIES = 'GET_PRODUCT_CATEGORIES';
+export const GET_PRODUCTS_CATEGORIES = 'GET_PRODUCTS_CATEGORIES';
 export const CATEGORIES_RECEIVED = 'CATEGORIES_RECEIVED';
 export const GET_PRODUCTS_LIST = 'GET_PRODUCTS_LIST';
 export const PRODUCTS_RECEIVED = 'PRODUCTS_RECEIVED';
@@ -107,7 +109,7 @@ const reducer = (state = initialState, action = {}) => {
      * @Product actions
      */
 
-    case GET_PRODUCT_CATEGORIES:
+    case GET_PRODUCTS_CATEGORIES:
       return {
         ...state,
         loading_products_categories: true,
@@ -116,7 +118,7 @@ const reducer = (state = initialState, action = {}) => {
     case CATEGORIES_RECEIVED:
       return {
         ...state,
-        categoriesLIst: [action.categories],
+        categoriesList: action.categories,
         loading_products_categories: false,
       };
 
@@ -136,7 +138,7 @@ const reducer = (state = initialState, action = {}) => {
     case ADD_TO_CART:
       return {
         ...state,
-        cart_list: state.cart_list.push(action.name, action.description, action.image),
+        cart_list: [].push(action.name, action.description, action.image),
       };
       /**
        * default action
@@ -200,11 +202,11 @@ export const disconnect = () => ({
 // Products actions
 
 export const getProductsCategories = () => ({
-  type: GET_PRODUCT_CATEGORIES,
+  type: GET_PRODUCTS_CATEGORIES,
 });
 
 export const categoriesReceived = categories => ({
-  type: categoriesReceived,
+  type: CATEGORIES_RECEIVED,
   categories,
 });
 

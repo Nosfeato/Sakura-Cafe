@@ -23,6 +23,7 @@ import {} from 'src/store/reducer';
 const mapStateToProps = state => ({
   username: state.username,
   status: state.status,
+  connected: state.connected,
 });
 
 /* === Actions ===

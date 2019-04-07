@@ -11,12 +11,23 @@ import PropTypes from 'prop-types';
 /**
  * Code
  */
+class SignOut extends React.Component {
 
-const SignOut = () => (
-  <>
-    <button id="sign__out" type="button">Disconnect</button>
-  </>
-);
+  handleClick = () => {
+    const { signOut } = this.props;
+
+    signOut();
+  }
+
+  render() {
+    return (
+      <>
+        <button id="sign__out" onClick={this.handleClick} className="session__info__button" type="button">Disconnect</button>
+      </>
+    );
+  }
+}
+
 
 /* News.propTypes = {
   title: PropTypes.string.isRequired,

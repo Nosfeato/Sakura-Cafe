@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 /**
  * Local import
  */
-import SignOut from 'src/components/SignOut';
+import SignOut from 'src/components/Header/SignOutLink';
 
 // Action Creators
 import { disconnect } from 'src/store/reducer';
@@ -29,7 +29,7 @@ const mapStateToProps = state => ({
  * Pas de disptach à transmettre ? const mapDispatchToProps = {};
  */
 const mapDispatchToProps = dispatch => ({
-  surnomDeMaProps: () => {
+  signOut: () => {
     dispatch(disconnect());
   },
 });

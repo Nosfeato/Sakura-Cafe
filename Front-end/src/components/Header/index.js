@@ -11,10 +11,11 @@ import Username from 'src/components/Header/Username';
 import Status from 'src/components/Header/Status';
 import SignInLink from 'src/components/Header/SignInLink';
 import SignUpLink from 'src/components/Header/SignUpLink';
-import SignOutLink from 'src/components/Header/SignOutLink';
+import SignOutLink from 'src/containers/SignOut';
 import Cart from 'src/components/Header/Cart';
 import { Link } from 'react-router-dom';
 import Nav from './Nav';
+import OnOffSwitch from './OnOffSwitch';
 
 
 /**
@@ -29,8 +30,10 @@ import './header.scss';
  */
 class Header extends React.Component {
 
-  defineComponentsToLoad = (username, status) => {
-    if (username !== undefined && status !== undefined) {
+  defineComponentsToLoad = (username, status, connected) => {
+
+    if (connected === true) {
+
       return [
         <Username key="username" username={username} />,
         <Status key="status" status={status} />,
@@ -38,6 +41,7 @@ class Header extends React.Component {
         <Cart key="cart" />,
       ];
     }
+
     else {
       return [
         <SignInLink key="signin" />,
@@ -47,28 +51,21 @@ class Header extends React.Component {
   }
 
   render() {
-    const { username, status } = this.props;
+    const { username, status, connected } = this.props;
     return (
       <header id="header">
-        <div id="head">
-          <div className="onoffswitch">
-            <input type="checkbox" name="onoffswitch" className="onoffswitch__checkbox" id="myonoffswitch" />
-            <label id="animation__selector" className="onoffswitch__label" htmlFor="myonoffswitch">
-              <span className="onoffswitch__inner" />
-              <span className="onoffswitch__switch" />
-            </label>
-            <p id="animation__text">Animation</p>
-          </div> { /* End of onoffswitch */ }
-          <Link to="/"><img src={image} id="logo" alt="sakura-logo" /></Link>
+        <div id="header__wrapper">
+          { /* End of onoffswitch */ }
+          <OnOffSwitch />
+          <Link to="/home"><img src={image} id="logo" alt="sakura-logo" /></Link>
           <div id="session__info">
-            {this.defineComponentsToLoad(username, status)}
+            {this.defineComponentsToLoad(username, status, connected)}
           </div>
         </div>
         <Nav />
       </header>
     );
   }
-
 }
 
 /* Nav.propTypes */
