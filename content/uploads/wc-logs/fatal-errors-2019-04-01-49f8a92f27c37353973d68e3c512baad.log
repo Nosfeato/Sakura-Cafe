@@ -1,0 +1,42 @@
+2019-04-01T14:17:17+00:00 CRITICAL Object of class DateTime could not be converted to string dans /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-customize-control.php à la ligne 421
+
+2019-04-01T14:17:31+00:00 CRITICAL Object of class DateTime could not be converted to string dans /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-customize-control.php à la ligne 421
+
+2019-04-01T14:19:59+00:00 CRITICAL Uncaught Error: Cannot use object of type DateTime as array in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-customize-nav-menus.php:552
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): WP_Customize_Nav_Menus->filter_dynamic_setting_class('WP_Customize_Se...', NULL, Object(DateTime))
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(208): WP_Hook->apply_filters('WP_Customize_Se...', Array)
+#2 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-customize-manager.php(3673): apply_filters('customize_dynam...', 'WP_Customize_Se...', 'sakura_section_...', Object(DateTime))
+#3 /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/inc/customizer/news.php(37): WP_Customize_Manager->add_setting('sakura_section_...', Object(DateTime), Array)
+#4 /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/inc/customizer.php(22): sakura_register_customizer_section_news(Object(WP_Customize_Manager), 'sakura_theme_pa...' dans /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-customize-nav-menus.php à la ligne 552
+
+2019-04-01T14:20:04+00:00 CRITICAL Uncaught Error: Cannot use object of type DateTime as array in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-customize-nav-menus.php:552
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): WP_Customize_Nav_Menus->filter_dynamic_setting_class('WP_Customize_Se...', NULL, Object(DateTime))
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(208): WP_Hook->apply_filters('WP_Customize_Se...', Array)
+#2 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-customize-manager.php(3673): apply_filters('customize_dynam...', 'WP_Customize_Se...', 'sakura_section_...', Object(DateTime))
+#3 /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/inc/customizer/news.php(37): WP_Customize_Manager->add_setting('sakura_section_...', Object(DateTime), Array)
+#4 /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/inc/customizer.php(22): sakura_register_customizer_section_news(Object(WP_Customize_Manager), 'sakura_theme_pa...' dans /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-customize-nav-menus.php à la ligne 552
+
+2019-04-01T14:20:05+00:00 CRITICAL Uncaught Error: Cannot use object of type DateTime as array in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-customize-nav-menus.php:552
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): WP_Customize_Nav_Menus->filter_dynamic_setting_class('WP_Customize_Se...', NULL, Object(DateTime))
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(208): WP_Hook->apply_filters('WP_Customize_Se...', Array)
+#2 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-customize-manager.php(3673): apply_filters('customize_dynam...', 'WP_Customize_Se...', 'sakura_section_...', Object(DateTime))
+#3 /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/inc/customizer/news.php(37): WP_Customize_Manager->add_setting('sakura_section_...', Object(DateTime), Array)
+#4 /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/inc/customizer.php(22): sakura_register_customizer_section_news(Object(WP_Customize_Manager), 'sakura_theme_pa...' dans /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-customize-nav-menus.php à la ligne 552
+
+2019-04-01T14:20:05+00:00 CRITICAL Uncaught Error: Cannot use object of type DateTime as array in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-customize-nav-menus.php:552
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): WP_Customize_Nav_Menus->filter_dynamic_setting_class('WP_Customize_Se...', NULL, Object(DateTime))
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(208): WP_Hook->apply_filters('WP_Customize_Se...', Array)
+#2 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-customize-manager.php(3673): apply_filters('customize_dynam...', 'WP_Customize_Se...', 'sakura_section_...', Object(DateTime))
+#3 /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/inc/customizer/news.php(37): WP_Customize_Manager->add_setting('sakura_section_...', Object(DateTime), Array)
+#4 /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/inc/customizer.php(22): sakura_register_customizer_section_news(Object(WP_Customize_Manager), 'sakura_theme_pa...' dans /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-customize-nav-menus.php à la ligne 552
+
+2019-04-01T14:25:35+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/inc/customizer/news.php à la ligne 34
+
+2019-04-01T15:14:14+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/inc/customizer/news.php à la ligne 34
+
+2019-04-01T15:16:14+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/inc/customizer/news.php à la ligne 34
+

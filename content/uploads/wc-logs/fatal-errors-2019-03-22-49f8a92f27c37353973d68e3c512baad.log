@@ -1,0 +1,143 @@
+2019-03-22T13:02:21+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on boolean in /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/functions.php:20
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): payment_complete('')
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-settings.php(505): do_action('init')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp-config.php(111): require_once('/var/www/html/s...')
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-load.php(42): require_once('/var/www/html/s...')
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-cron.php(39): require_once('/var/www/html/s...')
+#7 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/functions.php à la ligne 20
+
+2019-03-22T13:02:21+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on boolean in /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/functions.php:20
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): payment_complete('')
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-settings.php(505): do_action('init')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp-config.php(111): require_once('/var/www/html/s...')
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-load.php(42): require_once('/var/www/html/s...')
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-blog-header.php(13): require_once('/var/www/html/s...')
+#7 /var/www/html/spe_wordpress/sakura-cafe/index.php(3): require('/var/www/html/s...')
+#8 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/functions.php à la ligne 20
+
+2019-03-22T13:03:55+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on boolean in /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/functions.php:20
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): payment_complete('')
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-settings.php(505): do_action('init')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp-config.php(111): require_once('/var/www/html/s...')
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-load.php(42): require_once('/var/www/html/s...')
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-cron.php(39): require_once('/var/www/html/s...')
+#7 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/functions.php à la ligne 20
+
+2019-03-22T13:03:55+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on boolean in /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/functions.php:20
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): payment_complete('')
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-settings.php(505): do_action('init')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp-config.php(111): require_once('/var/www/html/s...')
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-load.php(42): require_once('/var/www/html/s...')
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin-ajax.php(22): require_once('/var/www/html/s...')
+#7 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/functions.php à la ligne 20
+
+2019-03-22T13:04:53+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on boolean in /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/functions.php:20
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): payment_complete('')
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-settings.php(505): do_action('init')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp-config.php(111): require_once('/var/www/html/s...')
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-load.php(42): require_once('/var/www/html/s...')
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-blog-header.php(13): require_once('/var/www/html/s...')
+#7 /var/www/html/spe_wordpress/sakura-cafe/index.php(3): require('/var/www/html/s...')
+#8 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/functions.php à la ligne 20
+
+2019-03-22T13:04:55+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on boolean in /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/functions.php:20
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): payment_complete('')
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-settings.php(505): do_action('init')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp-config.php(111): require_once('/var/www/html/s...')
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-load.php(42): require_once('/var/www/html/s...')
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-cron.php(39): require_once('/var/www/html/s...')
+#7 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/functions.php à la ligne 20
+
+2019-03-22T13:04:55+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on boolean in /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/functions.php:20
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): payment_complete('')
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-settings.php(505): do_action('init')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp-config.php(111): require_once('/var/www/html/s...')
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-load.php(42): require_once('/var/www/html/s...')
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin-ajax.php(22): require_once('/var/www/html/s...')
+#7 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/functions.php à la ligne 20
+
+2019-03-22T13:05:03+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on boolean in /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/functions.php:20
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): payment_complete('')
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-settings.php(505): do_action('init')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp-config.php(111): require_once('/var/www/html/s...')
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-load.php(42): require_once('/var/www/html/s...')
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-blog-header.php(13): require_once('/var/www/html/s...')
+#7 /var/www/html/spe_wordpress/sakura-cafe/index.php(3): require('/var/www/html/s...')
+#8 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/functions.php à la ligne 20
+
+2019-03-22T13:06:56+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on boolean in /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/functions.php:20
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): payment_complete('')
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-settings.php(505): do_action('init')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp-config.php(111): require_once('/var/www/html/s...')
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-load.php(42): require_once('/var/www/html/s...')
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-cron.php(39): require_once('/var/www/html/s...')
+#7 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/functions.php à la ligne 20
+
+2019-03-22T13:06:56+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on boolean in /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/functions.php:20
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): payment_complete('')
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-settings.php(505): do_action('init')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp-config.php(111): require_once('/var/www/html/s...')
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-load.php(42): require_once('/var/www/html/s...')
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin-ajax.php(22): require_once('/var/www/html/s...')
+#7 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/functions.php à la ligne 20
+
+2019-03-22T13:22:11+00:00 CRITICAL Cannot redeclare wp_get_current_user() (previously declared in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/pluggable.php:69) dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php à la ligne 27
+
+2019-03-22T13:22:51+00:00 CRITICAL Cannot redeclare wp_get_current_user() (previously declared in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/pluggable.php:69) dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php à la ligne 27
+
+2019-03-22T13:25:15+00:00 CRITICAL syntax error, unexpected end of file dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php à la ligne 68
+
+2019-03-22T13:28:34+00:00 CRITICAL Cannot redeclare _wp_get_current_user() (previously declared in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/user.php:2662) dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php à la ligne 27
+
+2019-03-22T13:29:33+00:00 CRITICAL Cannot redeclare _wp_get_current_user() (previously declared in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/user.php:2662) dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php à la ligne 27
+
+2019-03-22T13:30:03+00:00 CRITICAL Cannot redeclare _wp_get_current_user() (previously declared in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/user.php:2662) dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/functions.php à la ligne 12
+
+2019-03-22T13:34:23+00:00 CRITICAL Uncaught Error: Call to undefined function wp_userdata() in /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php:26
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/template-loader.php(77): include()
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-blog-header.php(19): require_once('/var/www/html/s...')
+#2 /var/www/html/spe_wordpress/sakura-cafe/index.php(3): require('/var/www/html/s...')
+#3 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php à la ligne 26
+

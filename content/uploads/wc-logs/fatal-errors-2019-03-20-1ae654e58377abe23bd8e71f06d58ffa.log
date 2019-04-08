@@ -1,0 +1,85 @@
+2019-03-20T12:54:21+00:00 CRITICAL Uncaught Error: Call to undefined function WP_User() in /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php:28
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/template-loader.php(77): include()
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-blog-header.php(19): require_once('/var/www/html/s...')
+#2 /var/www/html/spe_wordpress/sakura-cafe/index.php(3): require('/var/www/html/s...')
+#3 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php à la ligne 28
+
+2019-03-20T12:54:34+00:00 CRITICAL Uncaught Error: Call to undefined function WP_User() in /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php:28
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/template-loader.php(77): include()
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-blog-header.php(19): require_once('/var/www/html/s...')
+#2 /var/www/html/spe_wordpress/sakura-cafe/index.php(3): require('/var/www/html/s...')
+#3 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php à la ligne 28
+
+2019-03-20T13:41:58+00:00 CRITICAL Uncaught Error: Call to undefined function WP_User() in /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php:28
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/template-loader.php(77): include()
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-blog-header.php(19): require_once('/var/www/html/s...')
+#2 /var/www/html/spe_wordpress/sakura-cafe/index.php(3): require('/var/www/html/s...')
+#3 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php à la ligne 28
+
+2019-03-20T14:30:49+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Order_Query::get_order_total() in /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php:29
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/template-loader.php(77): include()
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-blog-header.php(19): require_once('/var/www/html/s...')
+#2 /var/www/html/spe_wordpress/sakura-cafe/index.php(3): require('/var/www/html/s...')
+#3 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php à la ligne 29
+
+2019-03-20T15:01:59+00:00 CRITICAL Uncaught Error: Call to undefined function twentynineteen_the_posts_navigation() in /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php:50
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/template-loader.php(77): include()
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-blog-header.php(19): require_once('/var/www/html/s...')
+#2 /var/www/html/spe_wordpress/sakura-cafe/index.php(3): require('/var/www/html/s...')
+#3 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php à la ligne 50
+
+2019-03-20T15:02:31+00:00 CRITICAL Uncaught Error: Call to undefined function twentynineteen_the_posts_navigation() in /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php:45
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/template-loader.php(77): include()
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-blog-header.php(19): require_once('/var/www/html/s...')
+#2 /var/www/html/spe_wordpress/sakura-cafe/index.php(3): require('/var/www/html/s...')
+#3 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php à la ligne 45
+
+2019-03-20T15:05:56+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on array in /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php:33
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/template-loader.php(77): include()
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-blog-header.php(19): require_once('/var/www/html/s...')
+#2 /var/www/html/spe_wordpress/sakura-cafe/index.php(3): require('/var/www/html/s...')
+#3 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php à la ligne 33
+
+2019-03-20T15:31:26+00:00 CRITICAL Object of class stdClass could not be converted to string dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php à la ligne 33
+
+2019-03-20T15:41:21+00:00 CRITICAL Object of class stdClass could not be converted to string dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php à la ligne 34
+
+2019-03-20T15:52:08+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Query as array in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/woocommerce/includes/wc-order-functions.php:39
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php(32): wc_get_orders(Object(WP_Query))
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/template-loader.php(77): include('/var/www/html/s...')
+#2 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-blog-header.php(19): require_once('/var/www/html/s...')
+#3 /var/www/html/spe_wordpress/sakura-cafe/index.php(3): require('/var/www/html/s...')
+#4 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/plugins/woocommerce/includes/wc-order-functions.php à la ligne 39
+
+2019-03-20T15:53:21+00:00 CRITICAL Uncaught Error: Function name must be a string in /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php:27
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/template-loader.php(77): include()
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-blog-header.php(19): require_once('/var/www/html/s...')
+#2 /var/www/html/spe_wordpress/sakura-cafe/index.php(3): require('/var/www/html/s...')
+#3 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php à la ligne 27
+
+2019-03-20T16:15:11+00:00 CRITICAL Uncaught Error: Call to undefined function wp_get_current_user_id() in /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php:26
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/template-loader.php(77): include()
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-blog-header.php(19): require_once('/var/www/html/s...')
+#2 /var/www/html/spe_wordpress/sakura-cafe/index.php(3): require('/var/www/html/s...')
+#3 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/themes/sakura/archive.php à la ligne 26
+

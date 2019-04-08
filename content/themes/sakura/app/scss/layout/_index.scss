@@ -1,0 +1,23 @@
+.body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.body_picture_left {
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 50%;
+    height: 100%;
+}
+.body_picture_right {
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 50%;
+    height: 100%;
+}
+.button {
+    position: absolute;
+    top: 20%;
+    transform: translateX(50%);
+}

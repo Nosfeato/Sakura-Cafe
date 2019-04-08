@@ -1,0 +1,224 @@
+2019-03-28T09:35:13+00:00 CRITICAL require_once(): Failed opening required 'NANphp’' (include_path='.:/usr/share/php') dans /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php à la ligne 24
+
+2019-03-28T09:35:16+00:00 CRITICAL require_once(): Failed opening required 'NANphp’' (include_path='.:/usr/share/php') dans /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php à la ligne 24
+
+2019-03-28T09:35:16+00:00 CRITICAL require_once(): Failed opening required 'NANphp’' (include_path='.:/usr/share/php') dans /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php à la ligne 24
+
+2019-03-28T12:53:14+00:00 CRITICAL Uncaught Error: Call to undefined function register_desactivation_hook() in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php:65
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/includes/plugin.php(629): include_once()
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/plugins.php(44): activate_plugin('my-gmap/my-gmap...', 'http://localhos...', false)
+#2 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php à la ligne 65
+
+2019-03-28T12:53:31+00:00 CRITICAL Uncaught Error: Call to undefined function register_desactivation_hook() in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php:65
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/includes/plugin.php(2050): include()
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/plugins.php(175): plugin_sandbox_scrape('my-gmap/my-gmap...')
+#2 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php à la ligne 65
+
+2019-03-28T12:53:31+00:00 CRITICAL Uncaught Error: Call to undefined function register_desactivation_hook() in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php:65
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/includes/plugin.php(2050): include()
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/plugins.php(175): plugin_sandbox_scrape('my-gmap/my-gmap...')
+#2 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php à la ligne 65
+
+2019-03-28T13:57:22+00:00 CRITICAL require_once(): Failed opening required 'template/template.php' (include_path='.:/usr/share/php') dans /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php à la ligne 38
+
+2019-03-28T13:57:51+00:00 CRITICAL require_once(): Failed opening required 'template.php' (include_path='.:/usr/share/php') dans /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php à la ligne 38
+
+2019-03-28T15:03:22+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wpdb::prepare(), 1 passed in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php on line 86 and exactly 2 expected in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php:1295
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(86): wpdb->prepare('SELECT * FROM w...')
+#1 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php(33): My_Gmap->getmaplist()
+#2 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(39): require_once('/var/www/html/s...')
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): My_Gmap->gmap_admin_page('')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin.php(2 dans /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php à la ligne 1295
+
+2019-03-28T15:38:05+00:00 CRITICAL require_once(): Failed opening required '’templatephp’' (include_path='.:/usr/share/php') dans /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php à la ligne 48
+
+2019-03-28T15:39:10+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wpdb::prepare(), 1 passed in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php on line 109 and exactly 2 expected in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php:1295
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(109): wpdb->prepare('SELECT * FROM w...')
+#1 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php(33): My_Gmap->getmaplist()
+#2 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(48): require_once('/var/www/html/s...')
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): My_Gmap->gmap_admin_page('')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin.php dans /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php à la ligne 1295
+
+2019-03-28T15:40:55+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wpdb::prepare(), 1 passed in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php on line 109 and exactly 2 expected in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php:1295
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(109): wpdb->prepare('SELECT * FROM w...')
+#1 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php(33): My_Gmap->getmaplist()
+#2 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(48): require_once('/var/www/html/s...')
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): My_Gmap->gmap_admin_page('')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin.php dans /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php à la ligne 1295
+
+2019-03-28T16:04:18+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wpdb::prepare(), 1 passed in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php on line 117 and exactly 2 expected in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php:1295
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(117): wpdb->prepare('SELECT * FROM w...')
+#1 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php(33): My_Gmap->getmaplist()
+#2 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(48): require_once('/var/www/html/s...')
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): My_Gmap->gmap_admin_page('')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin.php dans /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php à la ligne 1295
+
+2019-03-28T16:54:44+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wpdb::prepare(), 1 passed in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php on line 152 and exactly 2 expected in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php:1295
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(152): wpdb->prepare('SELECT * FROM w...')
+#1 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php(25): My_Gmap->getmaplist()
+#2 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(48): require_once('/var/www/html/s...')
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): My_Gmap->gmap_admin_page('')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin.php dans /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php à la ligne 1295
+
+2019-03-28T17:06:28+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wpdb::prepare(), 1 passed in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php on line 152 and exactly 2 expected in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php:1295
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(152): wpdb->prepare('SELECT * FROM w...')
+#1 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php(25): My_Gmap->getmaplist()
+#2 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(48): require_once('/var/www/html/s...')
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): My_Gmap->gmap_admin_page('')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin.php dans /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php à la ligne 1295
+
+2019-03-28T17:15:17+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wpdb::prepare(), 1 passed in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php on line 150 and exactly 2 expected in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php:1295
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(150): wpdb->prepare('SELECT * FROM w...')
+#1 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php(25): My_Gmap->getmaplist()
+#2 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(48): require_once('/var/www/html/s...')
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): My_Gmap->gmap_admin_page('')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin.php dans /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php à la ligne 1295
+
+2019-03-28T17:16:15+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wpdb::prepare(), 1 passed in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php on line 150 and exactly 2 expected in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php:1295
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(150): wpdb->prepare('SELECT * FROM w...')
+#1 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php(25): My_Gmap->getmaplist()
+#2 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(48): require_once('/var/www/html/s...')
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): My_Gmap->gmap_admin_page('')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin.php dans /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php à la ligne 1295
+
+2019-03-28T17:17:07+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function My_Gmap::getmaplist(), 0 passed in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php on line 25 and exactly 1 expected in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php:145
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php(25): My_Gmap->getmaplist()
+#1 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(48): require_once('/var/www/html/s...')
+#2 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): My_Gmap->gmap_admin_page('')
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin.php(253): do_action('settings_page_m...')
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/options-gen dans /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php à la ligne 145
+
+2019-03-28T17:18:42+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function My_Gmap::getmaplist(), 0 passed in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php on line 25 and exactly 1 expected in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php:145
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php(25): My_Gmap->getmaplist()
+#1 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(48): require_once('/var/www/html/s...')
+#2 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): My_Gmap->gmap_admin_page('')
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin.php(253): do_action('settings_page_m...')
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/options-gen dans /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php à la ligne 145
+
+2019-03-28T17:28:15+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wpdb::prepare(), 1 passed in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php on line 150 and exactly 2 expected in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php:1295
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(150): wpdb->prepare('SELECT * FROM w...')
+#1 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php(25): My_Gmap->getmaplist()
+#2 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(48): require_once('/var/www/html/s...')
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): My_Gmap->gmap_admin_page('')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin.php dans /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php à la ligne 1295
+
+2019-03-28T17:29:28+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wpdb::prepare(), 1 passed in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php on line 150 and exactly 2 expected in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php:1295
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(150): wpdb->prepare('SELECT * FROM w...')
+#1 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php(25): My_Gmap->getmaplist()
+#2 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(48): require_once('/var/www/html/s...')
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): My_Gmap->gmap_admin_page('')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin.php dans /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php à la ligne 1295
+
+2019-03-28T18:20:03+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wpdb::prepare(), 1 passed in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php on line 150 and exactly 2 expected in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php:1295
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(150): wpdb->prepare('SELECT * FROM w...')
+#1 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php(25): My_Gmap->getmaplist()
+#2 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(48): require_once('/var/www/html/s...')
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): My_Gmap->gmap_admin_page('')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin.php dans /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php à la ligne 1295
+
+2019-03-28T18:20:44+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wpdb::prepare(), 1 passed in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php on line 150 and exactly 2 expected in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php:1295
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(150): wpdb->prepare('SELECT * FROM w...')
+#1 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php(25): My_Gmap->getmaplist()
+#2 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(48): require_once('/var/www/html/s...')
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): My_Gmap->gmap_admin_page('')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin.php dans /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php à la ligne 1295
+
+2019-03-28T18:20:49+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wpdb::prepare(), 1 passed in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php on line 150 and exactly 2 expected in /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php:1295
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(150): wpdb->prepare('SELECT * FROM w...')
+#1 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php(25): My_Gmap->getmaplist()
+#2 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(48): require_once('/var/www/html/s...')
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): My_Gmap->gmap_admin_page('')
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin.php dans /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/wp-db.php à la ligne 1295
+
+2019-03-28T18:21:00+00:00 CRITICAL Uncaught Error: Call to undefined method My_Gmap::getmaplist() in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php:25
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(48): require_once()
+#1 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): My_Gmap->gmap_admin_page('')
+#2 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin.php(253): do_action('settings_page_m...')
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/options-general.php(10): require_once('/var/www/html/s...')
+#6 {main}
+  thrown dans /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php à la ligne 25
+
+2019-03-28T18:23:39+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function My_Gmap::getmap(), 0 passed in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php on line 25 and exactly 1 expected in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php:134
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php(25): My_Gmap->getmap()
+#1 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(48): require_once('/var/www/html/s...')
+#2 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): My_Gmap->gmap_admin_page('')
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin.php(253): do_action('settings_page_m...')
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/options-general.php dans /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php à la ligne 134
+
+2019-03-28T18:24:11+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function My_Gmap::getmap(), 0 passed in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php on line 25 and exactly 1 expected in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php:134
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php(25): My_Gmap->getmap()
+#1 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(48): require_once('/var/www/html/s...')
+#2 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): My_Gmap->gmap_admin_page('')
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin.php(253): do_action('settings_page_m...')
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/options-general.php dans /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php à la ligne 134
+
+2019-03-28T18:24:18+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function My_Gmap::getmap(), 0 passed in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php on line 25 and exactly 1 expected in /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php:134
+Stack trace:
+#0 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/template.php(25): My_Gmap->getmap()
+#1 /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php(48): require_once('/var/www/html/s...')
+#2 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(286): My_Gmap->gmap_admin_page('')
+#3 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/admin.php(253): do_action('settings_page_m...')
+#6 /var/www/html/spe_wordpress/sakura-cafe/wp/wp-admin/options-general.php dans /var/www/html/spe_wordpress/sakura-cafe/content/plugins/my-gmap/my-gmap.php à la ligne 134
+

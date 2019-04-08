@@ -23,9 +23,9 @@ define( 'DB_NAME', 'sakura' );
 /** MySQL database username */
 define( 'DB_USER', 'sakura' );
 /** MySQL database password */
-define( 'DB_PASSWORD', 'sakura' );
+define( 'DB_PASSWORD', 'zepjOTKPN2kMmDXy' );//zepjOTKPN2kMmDXy
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', '92.243.8.107' );//92.243.8.107
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
 /** The Database Collate type. Don't change this if in doubt. */
@@ -39,14 +39,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'O:E=F+&a3bR&T`-,FMsgsAn&FY]Ij(@r(%!HV4#1~>%Bja-}Z);B4|O0GQ<BP+!F');
-define('SECURE_AUTH_KEY',  '--vnWV:ws|Y#I38&[</d+}@;}:&Zz8B;&g GB!id1~Y!E|C_3~fN k!BU-2Aedp9');
-define('LOGGED_IN_KEY',    '+uv2(-@R9)91|@|rGNw?@(K_E:nCJ0LPlhNw.0|4`TeAv8OT#+ev_Id P%=i`|pu');
-define('NONCE_KEY',        'T#JbmrJLGpk;2B^b 37[y38+D 7/D*OOdqc|e&*L=ar$k%?Jw9Hf!c1@$5H}-e-&');
-define('AUTH_SALT',        '+3o[ !p@e;om;hEnl>a+LssPbh^qPDPT+CJ YraeP-b`<pO-yO#2SYJc-~z|ue0/');
-define('SECURE_AUTH_SALT', 'SB&;Vm5!Jbc(4-N#*QL;lhw,pyG~}q~h)vc[LWE&dL4,#X1W? 6#7zo+F?aQ8wG7');
-define('LOGGED_IN_SALT',   'Q/o}LqcbcGad&NS0wHr5dr]]nuS6[v/zb?5n(-&0yRj/uPQ=^-6b,G}0(zgFL]U7');
-define('NONCE_SALT',       '64a|u*Tu7cb}a;yi_9N3Q`yQMB<W92S%5ybcLR#1UyJ=xZ_}pTF/{Za|{XAO tL`');
+define('AUTH_KEY',         'K9?bBrO(FccD|d[HSv ^t4R6v[tsdc-@gTCx`r%:DfC5Bu$^P*uMp6AB85d26P9M');
+define('SECURE_AUTH_KEY',  '+K:rBE{cE@QvQgIEOcWoI`_yzBd(fR9zCYMRIp:sk4sVf5{0yb||Qe88f9+e=3p=');
+define('LOGGED_IN_KEY',    'AS+U:tl{9cP-yl.wiUa9Z|w&2A>g?;+1:kAFw%R7KvL;cbK9`U.PxXYJ*`VQh}Ea');
+define('NONCE_KEY',        '+o?-}KKRKSV$1g-0-hyz3lLK!,MVf+tus=*IG+s9SLJf-Fc<Vn}?zGk.WOa0P_1l');
+define('AUTH_SALT',        'fODrHWG=gVwosz-RbL#A-z!=s BN9;)-Ox ZL5oKkykx`ZOkXoo[PY75Q6a/ w*p');
+define('SECURE_AUTH_SALT', 'd+Pe)JT?`zH.K&(tl*lWj^Bg|/;47,NEbc5P@0I3l_Pcl}$A=u,4+(:gXN9ciQvt');
+define('LOGGED_IN_SALT',   'dNZ^OPnrNdD67wU4~+l%xa5;66bGNt%f?YEE3_cAveG!?DLf~rb=Vz(v8jugYaz!');
+define('NONCE_SALT',       '^6|P+,E|LNoz>+D${v5,YL+XU|. 62jK9E,/l:d+5_uO(/F|Pv]L_ya}kXQF-iQq');
 /**#@-*/
 /**
  * WordPress Database Table prefix.
