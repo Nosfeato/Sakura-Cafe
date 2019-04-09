@@ -10,7 +10,8 @@ class PaypalButton extends React.Component {
       showButton: false,
     };
 
-
+    window.React = React;
+    window.ReactDOM = ReactDOM;
   }
 
   componentDidMount() {
@@ -102,4 +103,4 @@ class PaypalButton extends React.Component {
   }
 }
 
-export default PaypalButton;
+export default scriptLoader('https://www.paypalobjects.com/api/checkout.js')(PaypalButton);

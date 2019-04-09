@@ -1,19 +1,40 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+
+class ProductInfo extends React.Component {
+
+  
+  handleClick = () => {
+    const { removeItemFromCart } = this.props;
+    const { index } = this.props;
+
+    removeItemFromCart(index);
+    this.dismiss();
+  }
 
 
-const ProductInfo = ({ image, name, description}) => (
-  <li className="product__info__list__element">
-    <article className="product__info">
-      <img className="product__info__image" src={image} alt="article_x" />
-      <div className="product__info__description">
-        <h1 className="product__info__title">{name}</h1>
-        <p className="product__info__details">{description}</p>
-      </div>
-    </article>
-    <button className="add__cart__button" type="button">Add To Cart</button>
-  </li>
-);
+  dismiss() {
+      this.props.removeFromCart();
+      this.props.unmountMe();
+  } 
 
+  render() {
+
+    const { name, image, price, amount } = this.props;
+
+    return (
+      <li className="cart__element">
+        <article className="product__info">
+          <img src={image} className="product__info__image" alt="product_picture" />
+          <div className="product__info__details">
+            <h1 className="product__info__name">{name}</h1>
+            <span className="product__info__price">{price}</span>
+          </div>
+        </article>
+        <span>x {amount}</span>
+        <button type="button" onClick={this.handleClick}> Remove Product </button>
+      </li>
+    );
+  }
+}
 
 export default ProductInfo;

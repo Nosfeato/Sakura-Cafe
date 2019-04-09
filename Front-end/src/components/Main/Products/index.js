@@ -104,6 +104,7 @@ class Products extends React.Component {
                     description={product.description}
                     price={product.price}
                     stocks={product.stocks}
+                    image={product.image}
                   />
                 )) : null}
               </ul>

@@ -1,6 +1,7 @@
 #news__block {
   display: flex;
   flex-direction: column;
+  font-family: 'montserrat';
 
 }
 
@@ -28,23 +29,28 @@
 }
 
 .news__title {
-  margin-top: 30px;
+  margin-top: 1em;
+  
 }
 
 .news__date {
+  display: block;
   text-align: right;
+  font-weight: 400;
 }
 
 .news__description {
-  font-size: .7em;
+  font-size: .9em;
   margin-top: 30px;
+  line-height: 1.1rem;
+  font-weight: 400;
   
 }
 
 @media screen and (max-width: 640px) {
   .news {
+    display: flex;
     flex-direction: column;
-    
   }
 
   .news__image {
