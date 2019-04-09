@@ -10,6 +10,7 @@ const initialState = {
   categoriesList: [],
   cart_list: [],
   searchbar__input: '',
+  connected: true,
 };
 
 /**
@@ -32,6 +33,7 @@ export const CATEGORIES_RECEIVED = 'CATEGORIES_RECEIVED';
 export const GET_PRODUCTS_LIST = 'GET_PRODUCTS_LIST';
 export const PRODUCTS_RECEIVED = 'PRODUCTS_RECEIVED';
 export const ADD_TO_CART = 'ADD_TO_CART';
+export const REMOVE_FROM_CART = 'REMOVE_FROM_CART';
 
 
 /**
@@ -138,7 +140,13 @@ const reducer = (state = initialState, action = {}) => {
     case ADD_TO_CART:
       return {
         ...state,
-        cart_list: [].push(action.name, action.description, action.image),
+        cart_list: state.cart_list.concat({ name: action.name, description: action.description, image: action.image, id: action.id, price: action.price, amount: action.amount }),
+      };
+
+    case REMOVE_FROM_CART:
+      state.cart_list.splice(action.index, 1);
+      return {
+        ...state,
       };
       /**
        * default action
@@ -219,11 +227,18 @@ export const productsReceived = products => ({
   products,
 });
 
-export const addToCart = (name, description, image) => ({
+export const addToCart = (name, description, image, price, amount) => ({
   type: ADD_TO_CART,
   name,
   description,
   image,
+  price,
+  amount,
+});
+
+export const removeFromCart = index => ({
+  type: REMOVE_FROM_CART,
+  index,
 });
 /**
  * Selectors

@@ -51,7 +51,9 @@ class News extends React.Component {
         {this.shouldArrowRender('up')}
 
         <div id="news__selection" className="news">
-          <img className="news__image" alt="" src={image} />
+          { (image !== undefined) ? 
+            <img className="news__image" alt="" src={image} />
+            : null}
           <div className="news__text">
             <span className="news__date">{date}</span>
             <h1 className="news__title">{title}</h1>

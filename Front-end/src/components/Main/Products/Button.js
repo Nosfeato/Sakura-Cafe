@@ -6,16 +6,16 @@ import PropTypes from 'prop-types';
 class Button extends React.Component {
 
   componentDidMount () {
-    const button = document.getElementById("burger__button");
+    const button = document.getElementById('burger__button');
 
     button.addEventListener('click', this.handleClick);
     button.addEventListener('touchstart', this.handleClick);
   }
 
-  handleClick () {
+  handleClick = () => {
     const categoryList = document.getElementById('list');
     categoryList.style.display = 'block';
-}
+  }
 
   render() {
     return (

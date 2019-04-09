@@ -7,6 +7,8 @@ import { connect } from 'react-redux';
  * Local import
  */
 import Cart from 'src/components/Main/Cart';
+import { removeFromCart } from 'src/store/reducer';
+
 
 // Action Creators
 
@@ -34,7 +36,7 @@ const mapDispatchToProps = dispatch => ({
 const CartContainer = connect(
   mapStateToProps,
   mapDispatchToProps,
-)(Cart); 
+)(Cart);
 
 /* 2 temps
 const createContainer = connect(mapStateToProps, mapDispatchToProps);
